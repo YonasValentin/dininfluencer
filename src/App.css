@@ -1,1 +1,46 @@
-/*# sourceMappingURL=App.css.map */
+/* include media */
+/* base */
+#root {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.nav {
+  background: #ffffff;
+}
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__login-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.nav__login-wrapper a {
+  text-decoration: none;
+}
+.nav__login {
+  color: #4b00ff;
+  font-size: 14px;
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  .nav__login {
+    font-size: 16px;
+  }
+}
+.nav__sign-up {
+  padding: 8px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  background: #4b00ff;
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  .nav__sign-up {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=App.css.map */

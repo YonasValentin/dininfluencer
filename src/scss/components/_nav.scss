@@ -1,0 +1,27 @@
+.nav {
+  background: $white-color;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__login-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &__login {
+    @include link-text;
+  }
+
+  &__sign-up {
+    @include primary-button;
+  }
+}

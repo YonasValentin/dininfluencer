@@ -1,0 +1,9 @@
+@mixin link-text {
+  color: $primary-color;
+  font-size: 14px;
+  font-weight: 600;
+
+  @include media('>=tablet_portrait') {
+    font-size: 16px;
+  }
+}
