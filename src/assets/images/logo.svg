@@ -1,0 +1,22 @@
+<svg id="Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="233.004" height="39" viewBox="0 0 233.004 39">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2072" data-name="Rectangle 2072" width="39" height="39" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="logo-2" data-name="logo">
+    <g id="Layer_1" data-name="Layer 1">
+      <g id="Group_3968" data-name="Group 3968" clip-path="url(#clip-path)">
+        <g id="Mask_Group_256" data-name="Mask Group 256" transform="translate(0 12.094)">
+          <g id="_TEMP_SVG" data-name="  TEMP  SVG">
+            <path id="Path_29350" data-name="Path 29350" d="M12.386,37.719A4.839,4.839,0,1,0,7.547,32.88,4.839,4.839,0,0,0,12.386,37.719Zm0,2.422A7.26,7.26,0,1,0,5.13,32.882a7.26,7.26,0,0,0,7.256,7.259ZM31.74,37.719A4.839,4.839,0,1,0,26.9,32.88,4.839,4.839,0,0,0,31.74,37.719Zm0,2.422a7.26,7.26,0,1,0-7.256-7.259,7.26,7.26,0,0,0,7.256,7.259Z" transform="translate(-2.708 -25.62)" fill="#4b00ff" fill-rule="evenodd"/>
+            <path id="Path_29351" data-name="Path 29351" d="M19.354,33.172a2.417,2.417,0,0,0-2.417,2.417H14.516a4.839,4.839,0,1,1,9.677,0H21.776A2.422,2.422,0,0,0,19.354,33.172ZM0,35.589A1.208,1.208,0,0,1,1.208,34.38H3.63V36.8H1.208A1.208,1.208,0,0,1,0,35.589ZM37.5,36.8H35.079V34.38H37.5a1.208,1.208,0,0,1,0,2.417Z" transform="translate(0 -28.328)" fill="#4b00ff" fill-rule="evenodd"/>
+          </g>
+        </g>
+      </g>
+      <path id="Path_29350-2" data-name="Path 29350" d="M22.832,41a2.526,2.526,0,0,1-.472,1.784,2.733,2.733,0,0,1-2.36.944" transform="translate(-10.559 -21.646)" fill="none" stroke="#ff0080" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Path_29351-2" data-name="Path 29351" d="M63.832,41a2.525,2.525,0,0,1-.472,1.784,2.733,2.733,0,0,1-2.36.944" transform="translate(-32.204 -21.646)" fill="none" stroke="#ff0080" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      <text id="DinInfluencer" transform="translate(47.003 28.377)" fill="#221a43" font-size="29" font-family="JosefinSans-Bold, Josefin Sans" font-weight="700"><tspan x="0" y="0">DinInfluencer</tspan></text>
+    </g>
+  </g>
+</svg>

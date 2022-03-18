@@ -1,6 +1,6 @@
 import './App.css';
 import { Navigate, Route, Routes } from 'react-router-dom';
-import Nav from './components/global/Nav';
+import Nav from './components/Nav';
 import FrontPage from './pages/FrontPage';
 
 function App() {

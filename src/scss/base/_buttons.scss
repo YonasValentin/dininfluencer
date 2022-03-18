@@ -1,8 +1,10 @@
 @mixin button {
+  cursor: pointer;
   padding: 8px 24px;
   border-radius: 8px;
   font-weight: 600;
   font-size: 14px;
+  border: 0;
 
   @include media('>=tablet_portrait') {
     font-size: 16px;
@@ -18,4 +20,10 @@
 @mixin secoundary-button {
   @include button;
   background: $secoundary-color;
+}
+@mixin special-button {
+  @include button;
+  color: $white-color;
+  background: transparent linear-gradient(103deg, #4b00ff 0%, #ff0080 100%) 0%
+    0% no-repeat padding-box;
 }
