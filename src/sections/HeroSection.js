@@ -5,7 +5,7 @@ export default function HeroSection() {
     <section className="hero-section">
       <div className="hero-section__container">
         <figure className="hero-section__img-wrapper">
-          <img src={heroimage}></img>
+          <img alt="picture of influencer with camera" src={heroimage}></img>
         </figure>
         <aside className="hero-section__body-wrapper">
           <h1>

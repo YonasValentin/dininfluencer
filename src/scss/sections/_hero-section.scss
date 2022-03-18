@@ -46,6 +46,7 @@
 
     h1 {
       @include h1;
+      font-weight: 1000;
 
       span {
         color: $primary-color;

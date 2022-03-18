@@ -173,6 +173,7 @@
   color: #1d1443;
   font-size: 32px;
   line-height: 36px;
+  font-weight: 1000;
 }
 @media (min-width: 768px) {
   .hero-section__body-wrapper h1 {
