@@ -15,4 +15,3 @@ const firebaseApp = initializeApp(firebaseConfig);
 const db = getFirestore(firebaseApp);
 
 export const usersRef = collection(db, 'users'); // reference to users collection i firestore
-export const postsRef = collection(db, 'posts'); // reference to posts collection i firestore
