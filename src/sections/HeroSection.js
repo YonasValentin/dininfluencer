@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import heroimage from '../assets/images/hero-image.png';
 
 export default function HeroSection() {
@@ -5,7 +6,7 @@ export default function HeroSection() {
     <section className="hero-section">
       <div className="hero-section__container">
         <figure className="hero-section__img-wrapper">
-          <img alt="picture of influencer with camera" src={heroimage}></img>
+          <img alt="influencer with camera" src={heroimage}></img>
         </figure>
         <aside className="hero-section__body-wrapper">
           <h1>
@@ -15,7 +16,9 @@ export default function HeroSection() {
             An all-in-one platform that offers you relevant and effective
             influencers that makes a viable impact to your business.
           </p>
-          <button>Get started</button>
+          <Link to="/sign-up">
+            <button>Get started</button>
+          </Link>
         </aside>
       </div>
     </section>

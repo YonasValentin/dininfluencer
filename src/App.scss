@@ -2,6 +2,7 @@
 @import '../node_modules/include-media/dist/include-media';
 
 /* base */
+@import './scss/base/reset';
 @import './scss/base/global';
 @import './scss/base/colors';
 @import './scss/base/buttons';
@@ -16,3 +17,5 @@
 
 /* pages */
 @import './scss/pages/front-page';
+@import './scss/pages/sign-up-page';
+@import './scss/pages/login-page';
