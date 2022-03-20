@@ -1,5 +1,5 @@
 import { initializeApp } from 'firebase/app';
-import { getDocs, getFirestore, collection } from 'firebase/firestore';
+import { getFirestore, collection } from 'firebase/firestore';
 
 // firebaseConfig object copied from project in Firebase Console
 const firebaseConfig = {
@@ -14,12 +14,5 @@ const firebaseConfig = {
 const firebaseApp = initializeApp(firebaseConfig);
 const db = getFirestore(firebaseApp);
 
-async function getInfluencers(db) {
-  const influencerCol = collection(db, 'influencerList');
-  const influencerSnapshot = await getDocs(influencerCol);
-  const influencerList = influencerSnapshot.docs.map((doc) => doc.data());
-  return influencerList;
-}
-console.log(getInfluencers(db));
-
 export const usersRef = collection(db, 'users'); // reference to users collection i firestore
+export const influencersRef = collection(db, 'influencers'); // reference to influencers collection i firestore
