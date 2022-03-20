@@ -29,11 +29,6 @@ svg {
   max-width: 100%;
 }
 
-#root {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
 /* component */
 .nav {
   background: #ffffff;
@@ -44,6 +39,7 @@ svg {
   width: 100%;
 }
 .nav__container {
+  max-width: 1440px;
   margin: 0 auto 32px;
   padding: 72px 20px 0 19px;
   padding-top: 16px;
@@ -51,8 +47,8 @@ svg {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  margin: 0;
+  margin: 0 auto;
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
 }
 @media (min-width: 768px) {
   .nav__container {
@@ -127,6 +123,7 @@ svg {
 
 /* section */
 .hero-section__container {
+  max-width: 1440px;
   margin: 0 auto 32px;
   padding: 72px 20px 0 19px;
 }
@@ -251,7 +248,12 @@ svg {
 }
 
 /* pages */
+.sign-up-page {
+  background: #f1f4ff;
+  min-height: 100vh;
+}
 .sign-up-page__container {
+  max-width: 1440px;
   margin: 0 auto 32px;
   padding: 72px 20px 0 19px;
 }
@@ -280,7 +282,12 @@ svg {
   }
 }
 
+.login-page {
+  background: #f1f4ff;
+  min-height: 100vh;
+}
 .login-page__container {
+  max-width: 1440px;
   margin: 0 auto 32px;
   padding: 72px 20px 0 19px;
 }
@@ -307,4 +314,8 @@ svg {
     padding-right: 160px;
     padding-left: 160px;
   }
+}
+.login-page form {
+  background: #ffffff;
+  padding: 56px;
 }/*# sourceMappingURL=App.css.map */

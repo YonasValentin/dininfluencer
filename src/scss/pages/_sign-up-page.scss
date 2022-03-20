@@ -1,4 +1,7 @@
 .sign-up-page {
+  background: $light-blue-color;
+  min-height: 100vh;
+
   &__container {
     @include container;
   }

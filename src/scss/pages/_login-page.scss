@@ -1,5 +1,13 @@
 .login-page {
+  background: $light-blue-color;
+  min-height: 100vh;
+
   &__container {
     @include container;
+  }
+
+  form {
+    background: $white-color;
+    padding: 56px;
   }
 }
