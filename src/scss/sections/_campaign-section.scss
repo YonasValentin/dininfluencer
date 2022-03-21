@@ -1,9 +1,10 @@
-.collaborate-section {
+.campaign-section {
   &__container {
     @include container;
 
     @include media('>=tablet_portrait') {
       display: flex;
+      flex-direction: row-reverse;
       align-items: center;
       justify-content: space-between;
       gap: 64px;

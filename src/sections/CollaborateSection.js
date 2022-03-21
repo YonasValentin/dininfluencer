@@ -8,7 +8,7 @@ export default function CollaborateSection() {
           <img alt="collaborate shown" src={CollaborateImage}></img>
         </figure>
         <aside className="collaborate-section__body-wrapper">
-          <h1>Collaborate with the leading influencers</h1>
+          <h3>Collaborate with the leading influencers</h3>
           <p>
             Build and nurture relationships with influencers to create long term
             partnerships that will generate quality content for your brand and

@@ -3,7 +3,7 @@
   min-height: 100vh;
 
   &__container {
-    @include container;
+    padding-top: 72px;
   }
 
   form {

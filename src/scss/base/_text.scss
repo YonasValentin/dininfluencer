@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @mixin heading {
   font-weight: bold;
   color: $heading-color;
+  font-family: 'Rubik';
 }
 
 @mixin h1 {
@@ -12,6 +16,38 @@
     font-size: 48px;
     line-height: 64px;
   }
+}
+
+@mixin h2 {
+  @include heading;
+  font-size: 28px;
+
+  @include media('>=tablet_portrait') {
+    font-size: 45px;
+  }
+}
+
+@mixin h3 {
+  @include heading;
+  font-size: 24px;
+
+  @include media('>=tablet_portrait') {
+    font-size: 32px;
+  }
+}
+
+@mixin h4 {
+  @include heading;
+  font-size: 18px;
+
+  @include media('>=tablet_portrait') {
+    font-size: 20px;
+  }
+}
+
+@mixin h5 {
+  @include heading;
+  font-size: 16px;
 }
 
 @mixin text-body {
@@ -30,6 +66,7 @@
   color: $primary-color;
   font-size: 14px;
   font-weight: 600;
+  font-family: 'Poppins';
 
   @include media('>=tablet_portrait') {
     font-size: 16px;

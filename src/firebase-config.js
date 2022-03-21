@@ -1,5 +1,5 @@
 import { initializeApp } from 'firebase/app';
-import { addDoc, getFirestore, collection } from 'firebase/firestore';
+import { getFirestore, collection } from 'firebase/firestore';
 
 // firebaseConfig object copied from project in Firebase Console
 const firebaseConfig = {
@@ -15,21 +15,5 @@ const firebaseApp = initializeApp(firebaseConfig);
 const db = getFirestore(firebaseApp);
 
 export const influencersRef = collection(db, 'influencers'); // reference to influencers collection i firestore
-
-async function importData() {
-  const res = await fetch(
-    'https://raw.githubusercontent.com/YonasValentin/dininfluencer/master/src/json/excel-to-json-465429552.json'
-  );
-  const data = await res.json();
-  const influencers = data.influencerList;
-
-  for (const influencer of influencers) {
-    console.log(influencer);
-
-    await addDoc(influencersRef, influencer);
-  }
-}
-
-importData();
 
 export const usersRef = collection(db, 'users'); // reference to users collection i firestore

@@ -1,0 +1,36 @@
+.review-section {
+  background: $light-blue-color;
+  &__container {
+    @include container;
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  &__heading {
+    @include h2;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__review-box {
+    background: $white-color;
+    padding: 64px 16px;
+    border-radius: 8px;
+    position: relative;
+    margin-top: 96px;
+
+    &::before {
+      content: '';
+      display: block;
+      background-image: url('./assets/images/quote.svg');
+      background-repeat: no-repeat;
+      background-position: top right;
+      position: absolute;
+      top: -50%;
+      left: -16px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

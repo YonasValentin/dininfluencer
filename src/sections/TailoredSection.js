@@ -1,13 +1,13 @@
-import MetricsImage from '../assets/images/1-section-img.png';
+import TailoredImage from '../assets/images/4-section-img.png';
 
-export default function MetricsSection() {
+export default function TailoredSection() {
   return (
-    <section className="metrics-section">
-      <div className="metrics-section__container">
-        <figure className="metrics-section__img-wrapper">
-          <img alt="metrics shown" src={MetricsImage}></img>
+    <section className="tailored-section">
+      <div className="tailored-section__container">
+        <figure className="tailored-section__img-wrapper">
+          <img alt="metrics shown" src={TailoredImage}></img>
         </figure>
-        <aside className="metrics-section__body-wrapper">
+        <aside className="tailored-section__body-wrapper">
           <h3>All of your metrics in our sophisticated dashboard</h3>
           <p>
             Keep track of your campaigns and see how well it went for each
