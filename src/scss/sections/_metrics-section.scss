@@ -1,0 +1,57 @@
+.metrics-section {
+  &__container {
+    @include container;
+
+    @include media('>=tablet_portrait') {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__img-wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+
+    @include media('>=tablet_portrait') {
+      flex: 1;
+    }
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__body-wrapper {
+    position: relative;
+
+    @include media('>=tablet_portrait') {
+      flex: 1;
+      padding: 56px 0;
+    }
+
+    h1 {
+      @include h1;
+      font-weight: 1000;
+      margin-bottom: 24px;
+
+      span {
+        color: $primary-color;
+      }
+    }
+
+    p {
+      @include text-body;
+      margin-bottom: 16px;
+
+      @include media('>=tablet_portrait') {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}

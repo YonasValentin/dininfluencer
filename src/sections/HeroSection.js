@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
-import heroimage from '../assets/images/hero-image.png';
+import HeroImage from '../assets/images/hero-image.png';
 
 export default function HeroSection() {
   return (
     <section className="hero-section">
       <div className="hero-section__container">
         <figure className="hero-section__img-wrapper">
-          <img alt="influencer with camera" src={heroimage}></img>
+          <img alt="influencer with camera" src={HeroImage}></img>
         </figure>
         <aside className="hero-section__body-wrapper">
           <h1>
