@@ -102,7 +102,7 @@ svg {
   color: #4b00ff;
   font-size: 14px;
   font-weight: 600;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
 }
 @media (min-width: 768px) {
   .nav__login {
@@ -205,7 +205,7 @@ svg {
 .hero-section__body-wrapper h1 {
   font-weight: bold;
   color: #1d1443;
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-size: 32px;
   line-height: 36px;
   font-weight: 1000;
@@ -322,7 +322,7 @@ svg {
 .metrics-section__body-wrapper h3 {
   font-weight: bold;
   color: #1d1443;
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-size: 24px;
   margin-bottom: 24px;
 }
@@ -417,7 +417,7 @@ svg {
 .collaborate-section__body-wrapper h3 {
   font-weight: bold;
   color: #1d1443;
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-size: 24px;
   margin-bottom: 24px;
 }
@@ -513,7 +513,7 @@ svg {
 .campaign-section__body-wrapper h3 {
   font-weight: bold;
   color: #1d1443;
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-size: 24px;
   margin-bottom: 24px;
 }
@@ -608,7 +608,7 @@ svg {
 .tailored-section__body-wrapper h3 {
   font-weight: bold;
   color: #1d1443;
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-size: 24px;
   margin-bottom: 24px;
 }
@@ -674,7 +674,7 @@ svg {
 .review-section__heading {
   font-weight: bold;
   color: #1d1443;
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-size: 28px;
   display: flex;
   justify-content: center;
