@@ -27,10 +27,53 @@
       background-repeat: no-repeat;
       background-position: top right;
       position: absolute;
-      top: -50%;
+      top: -18%;
       left: -16px;
       width: 100%;
       height: 100%;
     }
   }
+
+  &__quote {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 24px;
+  }
+
+  &__image-wrapper {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 16px;
+  }
+
+  &__name {
+    @include h5;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__profession {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  &::after {
+    font-size: 16px !important;
+    color: $primary-color;
+  }
+}
+
+.swiper-pagination {
+  top: 90%;
+}
+
+.swiper-pagination-bullet-active {
+  background: $primary-color !important;
 }

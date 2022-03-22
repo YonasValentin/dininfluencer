@@ -10,54 +10,48 @@ export default function ReviewSection() {
   const reviewsList = [
     {
       reviewID: 1,
-      reviewQuote:
-        'Labore ut velit sunt ad irure cupidatat ad consectetur commodo Lorem excepteur cupidatat ullamco aliqua.',
-      reviewProfileImage:
-        'https://images.pexels.com/photos/3468711/pexels-photo-3468711.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      reviewQuote: 'Nulla tempor pariatur duis cillum ad reprehenderit.',
+      reviewProfileImage: 'https://api.lorem.space/image/face?hash=o979khmo',
       reviewProfiltImageAltTxt:
         'Magna culpa enim nulla id cupidatat esse ea mollit do esse sunt culpa.',
       reviewName: 'Shawn Hardy',
-      reviewPosition: 'Lector',
+      reviewProfession: 'Lector',
     },
     {
       reviewID: 2,
       reviewQuote: 'Nulla tempor pariatur duis cillum ad reprehenderit.',
-      reviewProfileImage:
-        'https://images.pexels.com/photos/11384153/pexels-photo-11384153.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      reviewProfileImage: 'https://api.lorem.space/image/face?hash=03sniipn',
       reviewProfileImageAltTxt:
         'Labore magna elit exercitation consequat enim in.',
       reviewName: 'Larry Briggs',
-      reviewPosition: 'Lector',
+      reviewProfession: 'Lector',
     },
     {
       reviewID: 3,
       reviewQuote: 'Nulla tempor pariatur duis cillum ad reprehenderit.',
-      reviewProfileImage:
-        'https://images.pexels.com/photos/11384153/pexels-photo-11384153.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      reviewProfileImage: 'https://api.lorem.space/image/face?hash=m8c9biyb',
       reviewProfileImageAltTxt:
         'Labore magna elit exercitation consequat enim in.',
       reviewName: 'Larry Briggs',
-      reviewPosition: 'Lector',
+      reviewProfession: 'Lector',
     },
     {
       reviewID: 4,
       reviewQuote: 'Nulla tempor pariatur duis cillum ad reprehenderit.',
-      reviewProfileImage:
-        'https://images.pexels.com/photos/11384153/pexels-photo-11384153.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      reviewProfileImage: 'https://api.lorem.space/image/face?hash=bv2em43g',
       reviewProfileImageAltTxt:
         'Labore magna elit exercitation consequat enim in.',
       reviewName: 'Larry Briggs',
-      reviewPosition: 'Lector',
+      reviewProfession: 'Lector',
     },
     {
       reviewID: 5,
       reviewQuote: 'Nulla tempor pariatur duis cillum ad reprehenderit.',
-      reviewProfileImage:
-        'https://images.pexels.com/photos/11384153/pexels-photo-11384153.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      reviewProfileImage: 'https://api.lorem.space/image/face?hash=kuqy2ary',
       reviewProfileImageAltTxt:
         'Labore magna elit exercitation consequat enim in.',
       reviewName: 'Larry Briggs',
-      reviewPosition: 'Lector',
+      reviewProfession: 'Lector',
     },
   ];
 
@@ -67,35 +61,35 @@ export default function ReviewSection() {
         <h2 className="review-section__heading">
           What our clients have to say
         </h2>
-        <Swiper
-          modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
-          slidesPerView={1}
-          navigation
-          autoplay={true}
-          loop={true}
-          pagination={{ clickable: true }}
-          onReachEnd={() => {
-            /*...*/
-          }}
-        >
-          {reviewsList.map((review) => (
-            <SwiperSlide key={review.id}>
-              <div className="review-section__review-box">
-                <h2 className="review-section__quote">{review.reviewQuote}</h2>
+        <div className="review-section__review-box">
+          <Swiper
+            modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
+            slidesPerView={1}
+            navigation
+            autoplay={false}
+            loop={true}
+            pagination={{ clickable: true }}
+            onReachEnd={() => {
+              /*...*/
+            }}
+          >
+            {reviewsList.map((review) => (
+              <SwiperSlide key={review.id}>
+                <p className="review-section__quote">{review.reviewQuote}</p>
                 <figure className="review-section__image-wrapper">
                   <img
                     src={review.reviewProfileImage}
                     alt={review.reviewProfileImageAltTxt}
                   ></img>
                 </figure>
-                <p className="review-section__name">{review.reviewName}</p>
-                <p className="review-section__position">
-                  {review.reviewPosition}
+                <h5 className="review-section__name">{review.reviewName}</h5>
+                <p className="review-section__profession">
+                  {review.reviewProfession}
                 </p>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </div>
     </main>
   );
