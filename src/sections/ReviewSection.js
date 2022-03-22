@@ -15,7 +15,7 @@ export default function ReviewSection() {
       reviewProfiltImageAltTxt:
         'Magna culpa enim nulla id cupidatat esse ea mollit do esse sunt culpa.',
       reviewName: 'Shawn Hardy',
-      reviewProfession: 'Lector',
+      reviewProfession: 'CEO, Vestas',
     },
     {
       reviewID: 2,
@@ -23,8 +23,8 @@ export default function ReviewSection() {
       reviewProfileImage: 'https://api.lorem.space/image/face?hash=03sniipn',
       reviewProfileImageAltTxt:
         'Labore magna elit exercitation consequat enim in.',
-      reviewName: 'Larry Briggs',
-      reviewProfession: 'Lector',
+      reviewName: 'Angel Berry',
+      reviewProfession: 'Store Manager, Nille',
     },
     {
       reviewID: 3,
@@ -32,8 +32,8 @@ export default function ReviewSection() {
       reviewProfileImage: 'https://api.lorem.space/image/face?hash=m8c9biyb',
       reviewProfileImageAltTxt:
         'Labore magna elit exercitation consequat enim in.',
-      reviewName: 'Larry Briggs',
-      reviewProfession: 'Lector',
+      reviewName: 'Leo Morales',
+      reviewProfession: 'Chef, Noma',
     },
     {
       reviewID: 4,
@@ -41,8 +41,8 @@ export default function ReviewSection() {
       reviewProfileImage: 'https://api.lorem.space/image/face?hash=bv2em43g',
       reviewProfileImageAltTxt:
         'Labore magna elit exercitation consequat enim in.',
-      reviewName: 'Larry Briggs',
-      reviewProfession: 'Lector',
+      reviewName: 'Loretta Wells',
+      reviewProfession: 'Personal Trainer, Fitness World',
     },
     {
       reviewID: 5,
@@ -50,8 +50,8 @@ export default function ReviewSection() {
       reviewProfileImage: 'https://api.lorem.space/image/face?hash=kuqy2ary',
       reviewProfileImageAltTxt:
         'Labore magna elit exercitation consequat enim in.',
-      reviewName: 'Larry Briggs',
-      reviewProfession: 'Lector',
+      reviewName: 'Estelle Singleton',
+      reviewProfession: 'Manager, Casino Royal',
     },
   ];
 
@@ -66,7 +66,7 @@ export default function ReviewSection() {
             modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
             slidesPerView={1}
             navigation
-            autoplay={false}
+            autoplay={true}
             loop={true}
             pagination={{ clickable: true }}
             onReachEnd={() => {
