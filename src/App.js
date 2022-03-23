@@ -5,6 +5,7 @@ import FrontPage from './pages/FrontPage';
 import SignUpPage from './pages/SignUpPage';
 import LoginPage from './pages/LoginPage';
 import InfluencerOverview from './pages/InfluencerOverview';
+import MultiStepForm from './multi-step-form/MultiStepForm';
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
         <Route path="/sign-up" element={<SignUpPage />}></Route>
         <Route path="/login" element={<LoginPage />}></Route>
         <Route path="/overview" element={<InfluencerOverview />}></Route>
+        <Route path="/overview" element={<InfluencerOverview />}></Route>
+        <Route path="/multistepform" element={<MultiStepForm />}></Route>
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </main>

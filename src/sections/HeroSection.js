@@ -16,7 +16,7 @@ export default function HeroSection() {
             An all-in-one platform that offers you relevant and effective
             influencers that makes a viable impact to your business.
           </p>
-          <Link to="/sign-up">
+          <Link to="/multistepform">
             <button>Get started</button>
           </Link>
         </aside>

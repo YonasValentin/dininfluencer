@@ -74,7 +74,7 @@ export default function ReviewSection() {
             }}
           >
             {reviewsList.map((review) => (
-              <SwiperSlide key={review.id}>
+              <SwiperSlide key={review.reviewID}>
                 <p className="review-section__quote">{review.reviewQuote}</p>
                 <figure className="review-section__image-wrapper">
                   <img

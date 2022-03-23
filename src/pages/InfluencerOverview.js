@@ -3,15 +3,16 @@ import { onSnapshot, query, orderBy } from 'firebase/firestore';
 import { influencersRef } from '../firebase-config';
 import PostCard from '../components/PostCard';
 
-export default function HomePage() {
+export default function InfluencerOverview() {
   const [influencers, setInfluencers] = useState([]);
 
   useEffect(() => {
-    const q = query(influencersRef, orderBy('bio', 'isPrivate')); // order by: lastest post first
+    const q = query(influencersRef); // order by: lastest post first
     const unsubscribe = onSnapshot(q, (data) => {
       const influencerData = data.docs.map((doc) => {
         return { ...doc.data(), id: doc.id };
       });
+      console.log(influencerData);
       setInfluencers(influencerData);
     });
     return () => unsubscribe();
@@ -21,7 +22,7 @@ export default function HomePage() {
     <section className="page">
       <section className="grid-container">
         {influencers.map((influencer) => (
-          <PostCard post={influencer} key={influencer.id} />
+          <PostCard influencer={influencer} key={influencer.id} />
         ))}
       </section>
     </section>

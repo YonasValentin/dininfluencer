@@ -1,6 +1,7 @@
 .review-section {
   background: $light-blue-color;
   &__container {
+    margin-bottom: 0 !important;
     @include container;
     padding-top: 56px;
     padding-bottom: 56px;

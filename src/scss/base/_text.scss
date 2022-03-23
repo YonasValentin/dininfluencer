@@ -72,3 +72,35 @@
     font-size: 16px;
   }
 }
+
+@mixin navbar-link-blue {
+  color: $purple-color;
+  font-family: 'Rubik', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+
+  @include media('>=tablet_portrait') {
+    font-size: 18px;
+  }
+}
+
+@mixin navbar-link-black {
+  color: $black-color;
+  font-family: 'Rubik', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+
+  @include media('>=tablet_portrait') {
+    font-size: 18px;
+  }
+}
+
+@mixin description-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+
+  @include media('>=tablet_portrait') {
+    font-size: 15px;
+  }
+}

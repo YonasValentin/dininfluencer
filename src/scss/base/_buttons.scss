@@ -12,6 +12,7 @@
 }
 
 @mixin primary-button {
+  padding: 8px 24px;
   @include button;
   background: $primary-color;
   color: $white-color;
