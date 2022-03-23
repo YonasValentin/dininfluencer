@@ -137,6 +137,8 @@ svg {
   max-width: 1440px;
   margin: 0 auto 40px;
   padding: 0 20px 0 19px;
+  margin-bottom: 0;
+  padding-bottom: 24px;
 }
 @media (min-width: 768px) {
   .multi-step-form__container {
@@ -166,11 +168,11 @@ svg {
 
 .multi-step {
   padding-top: 96px;
+  display: grid;
 }
 @media (min-width: 768px) {
   .multi-step {
     padding-top: 208px;
-    display: grid;
     grid-template-columns: 1fr 2fr;
   }
 }
@@ -178,10 +180,14 @@ svg {
 .progtrckr {
   display: grid;
   grid-auto-flow: column;
+  grid-column-gap: 32px;
 }
 @media (min-width: 768px) {
   .progtrckr {
     grid-auto-flow: row;
+    position: absolute;
+    grid-column-gap: 0;
+    grid-row-gap: 32px;
   }
 }
 
@@ -259,7 +265,7 @@ svg {
 
 .footer-buttons {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   background: #ffffff;
   border-radius: 0 0 8px 8px;
   padding: 16px 13px 32px 14px;
@@ -288,6 +294,17 @@ svg {
   }
 }
 
+.pull-left {
+  background: none;
+  color: #4b00ff;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .business-category {
+    grid-column: 2;
+  }
+}
 .business-category__container {
   padding-top: 32px;
 }
@@ -313,7 +330,6 @@ svg {
   font-weight: 500;
   font-size: 14px;
   line-height: 19px;
-  font-weight: 400;
   margin-bottom: 32px;
 }
 @media (min-width: 768px) {
@@ -349,6 +365,81 @@ svg {
   opacity: 20%;
 }
 .business-category__form label input::placeholder {
+  opacity: 20%;
+}
+
+@media (min-width: 768px) {
+  .audience-type {
+    grid-column: 2;
+  }
+}
+.audience-type__container {
+  padding-top: 32px;
+}
+@media (min-width: 768px) {
+  .audience-type__container {
+    padding: 0;
+  }
+}
+.audience-type h3 {
+  font-weight: bold;
+  color: #1d1443;
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+@media (min-width: 768px) {
+  .audience-type h3 {
+    font-size: 32px;
+  }
+}
+.audience-type p {
+  color: #6a6772;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 32px;
+}
+@media (min-width: 768px) {
+  .audience-type p {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+.audience-type__form {
+  background: #ffffff;
+  border-radius: 8px 8px 0 0;
+  padding: 32px 13px 0 14px;
+}
+@media (min-width: 768px) {
+  .audience-type__form {
+    padding: 56px 56px 0;
+  }
+}
+.audience-type__form select {
+  background: #ffffff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 1px solid #bab5c5;
+  color: #6a6772;
+}
+.audience-type__form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.audience-type__form label input {
+  border: 1px solid #bab5c5;
+  border-radius: 8px;
+  padding: 12px 20px;
+}
+.audience-type__form label input::-moz-placeholder {
+  opacity: 20%;
+}
+.audience-type__form label input:-ms-input-placeholder {
+  opacity: 20%;
+}
+.audience-type__form label input::placeholder {
   opacity: 20%;
 }
 

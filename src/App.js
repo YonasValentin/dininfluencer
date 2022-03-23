@@ -16,7 +16,10 @@ function App() {
         <Route path="/sign-up" element={<SignUpPage />}></Route>
         <Route path="/login" element={<LoginPage />}></Route>
         <Route path="/overview" element={<InfluencerOverview />}></Route>
-        <Route path="/overview" element={<InfluencerOverview />}></Route>
+        <Route
+          path="/influencer-overview"
+          element={<InfluencerOverview />}
+        ></Route>
         <Route path="/multistepform" element={<MultiStepForm />}></Route>
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
