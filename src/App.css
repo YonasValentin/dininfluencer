@@ -387,7 +387,6 @@ svg {
 
 .rc-tooltip {
   padding: 0 !important;
-  top: 535px !important;
 }
 
 .rc-tooltip-arrow {
@@ -512,7 +511,7 @@ svg {
 }
 .budget__wrapper {
   display: grid !important;
-  grid-template-columns: 2fr 0.5fr 2fr !important;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 0.5fr) minmax(0, 2fr) !important;
 }
 .budget__input {
   grid-column: 1;

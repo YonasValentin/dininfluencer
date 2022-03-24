@@ -20,7 +20,7 @@ export const influencersRef = collection(db, 'influencers'); // reference to inf
 
 /* async function importData() {
   const res = await fetch(
-    'https://raw.githubusercontent.com/YonasValentin/dininfluencer/master/src/json/dininfluencer.json'
+    'https://raw.githubusercontent.com/YonasValentin/dininfluencer/master/src/json/new-profiles.json'
   );
   const data = await res.json();
   const influencers = data.influencerList;

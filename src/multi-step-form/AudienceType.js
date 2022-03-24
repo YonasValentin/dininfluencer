@@ -34,7 +34,7 @@ export default function AudienceType() {
               }} */
               min={18}
               max={100}
-              defaultValue={[25, 40]}
+              defaultValue={[18, 30]}
               tipFormatter={(value) => `${value}`}
               tipProps={{
                 placement: 'bottom',
