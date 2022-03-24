@@ -136,7 +136,12 @@
   background: none;
   color: $primary-color;
   font-weight: bold;
+  font-size: 14px;
   cursor: pointer;
+
+  @include media('>=tablet_portrait') {
+    font-size: 16px;
+  }
 }
 
 .business-category {
@@ -187,6 +192,35 @@
     }
   }
 }
+.rc-tooltip {
+  padding: 0 !important;
+  top: 535px !important;
+}
+.rc-tooltip-arrow {
+  display: none !important;
+}
+.rc-tooltip-inner {
+  background: none !important;
+  box-shadow: none !important;
+  color: $heading-color !important;
+  font-weight: bold !important;
+  padding: 0 !important;
+}
+.rc-slider-rail {
+  height: 8px !important;
+  background: $purple-light-color !important;
+}
+.rc-slider-track {
+  height: 8px !important;
+  background: $primary-color !important;
+}
+.rc-slider-handle {
+  margin-top: -3px !important;
+  background: $primary-color !important;
+  opacity: 1 !important;
+  border: 3px solid $white-color !important;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+}
 
 .audience-type {
   @include media('>=tablet_portrait') {
@@ -198,6 +232,82 @@
     @include media('>=tablet_portrait') {
       padding: 0;
     }
+  }
+
+  h3 {
+    @include h3;
+    margin-bottom: 16px;
+  }
+
+  p {
+    @include text-body;
+    margin-bottom: 32px;
+  }
+
+  &__form {
+    display: grid;
+    grid-row-gap: 32px;
+    background: $white-color;
+    border-radius: 8px 8px 0 0;
+    padding: 32px 13px 0 14px;
+
+    @include media('>=tablet_portrait') {
+      padding: 56px 56px 0;
+    }
+
+    select {
+      background: $white-color;
+      padding: 12px 20px;
+      border-radius: 8px;
+      border: 1px solid $grey-light-color;
+      color: $body-color;
+    }
+
+    label {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      input {
+        border: 1px solid $grey-light-color;
+        border-radius: 8px;
+        padding: 12px 20px;
+
+        &::placeholder {
+          opacity: 20%;
+        }
+      }
+    }
+  }
+}
+
+.budget {
+  @include media('>=tablet_portrait') {
+    grid-column: 2;
+  }
+  &__container {
+    padding-top: 32px;
+
+    @include media('>=tablet_portrait') {
+      padding: 0;
+    }
+  }
+
+  &__wrapper {
+    display: grid !important;
+    grid-template-columns: 2fr 0.5fr 2fr !important;
+  }
+
+  &__input {
+    grid-column: 1;
+  }
+
+  &__word {
+    font-weight: 400 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
   }
 
   h3 {

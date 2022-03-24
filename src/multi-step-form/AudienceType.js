@@ -24,26 +24,26 @@ export default function AudienceType() {
               <option>Woman</option>
             </select>
           </label>
-          <label>
+          <label className="age__wrapper">
             Age
             <TooltipSlider
               range
-              marks={{
+              /* marks={{
                 18: `18+`,
                 100: `100`,
-              }}
+              }} */
               min={18}
               max={100}
-              defaultValue={[18, 30]}
+              defaultValue={[25, 40]}
               tipFormatter={(value) => `${value}`}
               tipProps={{
-                placement: 'top',
+                placement: 'bottom',
                 visible: true,
               }}
               pushable={true}
             />
           </label>
-          <label>
+          <label className="keywords_wrapper">
             Keywords
             <input placeholder="Eg. Fashion"></input>
           </label>
