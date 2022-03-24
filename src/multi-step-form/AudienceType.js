@@ -1,6 +1,7 @@
 import React from 'react';
-import Range from 'rc-slider';
+//import Range from 'rc-slider';
 import 'rc-slider/assets/index.css';
+import TooltipSlider from '../components/TooltipSlider.tsx';
 
 export default function AudienceType() {
   return (
@@ -25,11 +26,12 @@ export default function AudienceType() {
           </label>
           <label>
             Age
-            <Range
-              pushable={true}
-              marks={{ 18: '18+', 100: '100' }}
+            <TooltipSlider
+              range
               min={18}
               max={100}
+              defaultValue={[3, 10]}
+              tipFormatter={(value) => `${value}`}
             />
           </label>
           <label>
