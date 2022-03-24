@@ -298,6 +298,7 @@ svg {
   background: none;
   color: #4b00ff;
   font-weight: bold;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
