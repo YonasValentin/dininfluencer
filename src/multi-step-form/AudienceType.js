@@ -28,15 +28,52 @@ export default function AudienceType() {
             Age
             <TooltipSlider
               range
+              marks={{
+                18: `18+`,
+                100: `100`,
+              }}
               min={18}
               max={100}
-              defaultValue={[3, 10]}
+              defaultValue={[18, 30]}
               tipFormatter={(value) => `${value}`}
+              tipProps={{
+                placement: 'top',
+                visible: true,
+              }}
+              pushable={true}
             />
           </label>
           <label>
-            Business Category
+            Keywords
             <input placeholder="Eg. Fashion"></input>
+          </label>
+
+          <label className="followers__wrapper">
+            Followers
+            <select className="followers__from">
+              <option></option>
+              <option></option>
+              <option></option>
+            </select>
+            <select className="followers__to">
+              <option></option>
+              <option></option>
+              <option></option>
+            </select>
+          </label>
+
+          <label className="engagement__wrapper">
+            Engagement
+            <select className="engagement__from">
+              <option></option>
+              <option></option>
+              <option></option>
+            </select>
+            <select className="engagement__to">
+              <option></option>
+              <option></option>
+              <option></option>
+            </select>
           </label>
         </form>
       </div>

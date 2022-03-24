@@ -35,6 +35,7 @@
 .progtrckr-doing {
   display: inline-flex;
   flex-direction: column;
+  align-items: center;
   gap: 8px;
 
   em {
@@ -54,12 +55,14 @@
   span {
     color: $primary-color;
     font-weight: bold;
+    text-align: center;
   }
 }
 
 .progtrckr-todo {
   display: inline-flex;
   flex-direction: column;
+  align-items: center;
   gap: 8px;
 
   em {
@@ -80,12 +83,14 @@
   span {
     display: inline-flex;
     flex-direction: column;
+    text-align: center;
   }
 }
 
 .progtrckr-done {
   display: inline-flex;
   flex-direction: column;
+  align-items: center;
   gap: 8px;
 
   em {
@@ -106,6 +111,7 @@
   span {
     display: inline-flex;
     flex-direction: column;
+    text-align: center;
   }
 }
 
@@ -237,4 +243,22 @@
       }
     }
   }
+}
+
+.followers__wrapper {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 16px !important;
+}
+.followers__from {
+  grid-column: 1;
+}
+
+.engagement__wrapper {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 16px !important;
+}
+.engagement__from {
+  grid-column: 1;
 }

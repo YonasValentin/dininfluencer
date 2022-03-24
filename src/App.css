@@ -17,6 +17,10 @@
   border: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 html,
 body {
   height: 100%;
@@ -194,6 +198,7 @@ svg {
 .progtrckr-doing {
   display: inline-flex;
   flex-direction: column;
+  align-items: center;
   gap: 8px;
 }
 .progtrckr-doing em {
@@ -213,11 +218,13 @@ svg {
 .progtrckr-doing span {
   color: #4b00ff;
   font-weight: bold;
+  text-align: center;
 }
 
 .progtrckr-todo {
   display: inline-flex;
   flex-direction: column;
+  align-items: center;
   gap: 8px;
 }
 .progtrckr-todo em {
@@ -237,11 +244,13 @@ svg {
 .progtrckr-todo span {
   display: inline-flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .progtrckr-done {
   display: inline-flex;
   flex-direction: column;
+  align-items: center;
   gap: 8px;
 }
 .progtrckr-done em {
@@ -261,6 +270,7 @@ svg {
 .progtrckr-done span {
   display: inline-flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .footer-buttons {
@@ -444,6 +454,26 @@ svg {
   opacity: 20%;
 }
 
+.followers__wrapper {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 16px !important;
+}
+
+.followers__from {
+  grid-column: 1;
+}
+
+.engagement__wrapper {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 16px !important;
+}
+
+.engagement__from {
+  grid-column: 1;
+}
+
 /* section */
 .hero-section__container {
   max-width: 1440px;
@@ -569,6 +599,89 @@ svg {
 }
 @media (min-width: 768px) {
   .hero-section__body-wrapper button {
+    font-size: 16px;
+  }
+}
+
+.influencer-section {
+  background: #f1f4ff;
+}
+.influencer-section__container {
+  max-width: 1440px;
+  margin: 0 auto 40px;
+  padding: 0 20px 0 19px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+@media (min-width: 768px) {
+  .influencer-section__container {
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-bottom: 64px;
+  }
+}
+@media (min-width: 1024px) {
+  .influencer-section__container {
+    padding-right: 44px;
+    padding-left: 44px;
+  }
+}
+@media (min-width: 1280px) {
+  .influencer-section__container {
+    padding-right: 128px;
+    padding-left: 128px;
+  }
+}
+@media (min-width: 1440px) {
+  .influencer-section__container {
+    padding-right: 160px;
+    padding-left: 160px;
+  }
+}
+.influencer-section h2 {
+  font-weight: bold;
+  color: #1d1443;
+  font-family: "Rubik", sans-serif;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+@media (min-width: 768px) {
+  .influencer-section h2 {
+    font-size: 45px;
+  }
+}
+.influencer-section p {
+  color: #6a6772;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .influencer-section p {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+.influencer-section a {
+  display: flex;
+  justify-content: center;
+}
+.influencer-section button {
+  padding: 8px 24px;
+  cursor: pointer;
+  padding: 8px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  border: 0;
+  background: #4b00ff;
+  color: #ffffff;
+  margin-top: 40px;
+}
+@media (min-width: 768px) {
+  .influencer-section button {
     font-size: 16px;
   }
 }

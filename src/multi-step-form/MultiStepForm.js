@@ -16,7 +16,16 @@ export default function MultiStepForm() {
   return (
     <main className="multi-step-form">
       <div className="multi-step-form__container">
-        <StepZilla steps={steps} showSteps={true} />
+        <StepZilla
+          startAtStep={
+            window.sessionStorage.getItem('step')
+              ? parseFloat(window.sessionStorage.getItem('step'))
+              : 0
+          }
+          onStepChange={(step) => window.sessionStorage.setItem('step', step)}
+          steps={steps}
+          showSteps={true}
+        />
       </div>
     </main>
   );
