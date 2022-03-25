@@ -7,6 +7,7 @@ export default function BlogCard({ post }) {
         <span>{post.date}</span>
         <h3>{post.title.rendered}</h3>
         <span>{post.date}</span>
+        <img src={post.acf.featured_image}></img>
       </div>
     </article>
   );

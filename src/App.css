@@ -719,6 +719,11 @@ svg {
   }
 }
 
+post-card__container img {
+  width: 200px;
+  height: 200px;
+}
+
 .post-card__container {
   background: #ffffff;
   border: 1px solid #d8e0ff;

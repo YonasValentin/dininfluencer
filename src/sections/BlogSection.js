@@ -14,7 +14,7 @@ export default function BlogSection() {
 
   useEffect(() => {
     Axios.get(
-      'http://dininfluencer.yonasvalentin.dk/wp-json/wp/v2/posts?categories=3'
+      'http://dininfluencer.yonasvalentin.dk/wp-json/wp/v2/posts?acf_format=standard'
     ).then((response) => {
       setPosts(response.data);
     });
@@ -51,11 +51,13 @@ export default function BlogSection() {
           }}
         >
           {posts.map((post) => {
-            return (
-              <SwiperSlide key={post.id} className="blog-section__post">
-                <BlogCard post={post} key={post.id} />
-              </SwiperSlide>
-            );
+            if (post.categories == 3) {
+              return (
+                <SwiperSlide key={post.id} className="blog-section__post">
+                  <BlogCard post={post} key={post.id} />
+                </SwiperSlide>
+              );
+            }
           })}
         </Swiper>
       </div>
