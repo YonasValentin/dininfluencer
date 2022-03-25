@@ -5,6 +5,7 @@ import CollaborateSection from '../sections/CollaborateSection';
 import CampaignSection from '../sections/CampaignSection';
 import TailoredSection from '../sections/TailoredSection';
 import ReviewSection from '../sections/ReviewSection';
+import BlogSection from '../sections/BlogSection';
 
 export default function FrontPage() {
   return (
@@ -17,6 +18,7 @@ export default function FrontPage() {
         <CampaignSection />
         <TailoredSection />
         <ReviewSection />
+        <BlogSection />
       </div>
     </main>
   );

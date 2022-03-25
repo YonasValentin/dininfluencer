@@ -27,6 +27,7 @@ export default function MultiStepForm() {
           onStepChange={(step) => window.sessionStorage.setItem('step', step)}
           steps={steps}
           showSteps={true}
+          prevBtnOnLastStep={false}
         />
       </div>
     </main>

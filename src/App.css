@@ -193,6 +193,7 @@ svg {
     position: absolute;
     grid-column-gap: 0;
     grid-row-gap: 32px;
+    overflow-x: hidden;
   }
 }
 
