@@ -4,9 +4,9 @@ export default function BlogCard({ post }) {
   return (
     <article className="post-card">
       <div className="post-card__container">
-        <p>{post.date}</p>
+        <span>{post.date}</span>
         <h3>{post.title.rendered}</h3>
-        <p>{post}</p>
+        <span>{post.date}</span>
       </div>
     </article>
   );
