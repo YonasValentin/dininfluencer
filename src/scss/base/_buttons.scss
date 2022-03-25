@@ -21,7 +21,9 @@
 @mixin secoundary-button {
   @include button;
   background: $secoundary-color;
+  color: $white-color;
 }
+
 @mixin special-button {
   @include button;
   color: $white-color;

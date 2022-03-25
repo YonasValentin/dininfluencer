@@ -736,6 +736,42 @@ post-card__container img {
   overflow: hidden;
 }
 
+.blog-card__container {
+  border-radius: 20px;
+  border: 1px solid #e3d8ff;
+}
+.blog-card__image-wrapper {
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+  aspect-ratio: 1/0.5;
+  border-bottom: 1px solid #e3d8ff;
+}
+.blog-card__content-wrapper {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+.blog-card__content-wrapper p {
+  flex: 1;
+}
+.blog-card__content-wrapper button {
+  cursor: pointer;
+  padding: 8px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  border: 0;
+  background: #ff0080;
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  .blog-card__content-wrapper button {
+    font-size: 16px;
+  }
+}
+
 /* section */
 .hero-section__container {
   max-width: 1440px;

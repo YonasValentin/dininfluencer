@@ -1,0 +1,29 @@
+.blog-card {
+  &__container {
+    border-radius: 20px;
+    border: 1px solid $purple-light-color;
+  }
+
+  &__image-wrapper {
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+    aspect-ratio: 1/0.5;
+    border-bottom: 1px solid $purple-light-color;
+  }
+
+  &__content-wrapper {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+
+    p {
+      flex: 1;
+    }
+
+    button {
+      @include secoundary-button;
+    }
+  }
+}
