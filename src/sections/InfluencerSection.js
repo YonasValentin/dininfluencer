@@ -37,11 +37,25 @@ export default function InfluencerOverview() {
         </p>
         <Swiper
           modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
-          slidesPerView={4}
+          //slidesPerView={1}
+          breakpoints={{
+            '@0.00': {
+              slidesPerView: 1,
+            },
+            '@0.75': {
+              slidesPerView: 2,
+            },
+            '@1.00': {
+              slidesPerView: 3,
+            },
+            '@1.50': {
+              slidesPerView: 4,
+            },
+          }}
           navigation
           autoplay={true}
           loop={true}
-          pagination={{ clickable: true }}
+          pagination={{ clickable: true, dynamicBullets: true }}
           onReachEnd={() => {
             /*...*/
           }}

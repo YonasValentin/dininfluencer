@@ -605,6 +605,18 @@ svg {
   grid-column: 1;
 }
 
+.post-card__container {
+  background: #ffffff;
+  border: 1px solid #d8e0ff;
+  border-radius: 20px;
+}
+.post-card__img-wrapper {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
 /* section */
 .hero-section__container {
   max-width: 1440px;

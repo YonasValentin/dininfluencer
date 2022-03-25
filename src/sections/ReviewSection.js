@@ -68,7 +68,7 @@ export default function ReviewSection() {
             navigation
             autoplay={true}
             loop={true}
-            pagination={{ clickable: true }}
+            pagination={{ clickable: true, dynamicBullets: true }}
             onReachEnd={() => {
               /*...*/
             }}
