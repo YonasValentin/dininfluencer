@@ -1,18 +1,24 @@
 import React from 'react';
+import 'rc-slider/assets/index.css';
+import LocationSlider from '../components/LocationSlider';
 
 export default function Location() {
   return (
     <main className="location">
       <div className="location__container">
-        <h3>Interview Questionnaire</h3>
+        <h3>Choose location</h3>
         <p>
-          Choose your business category. This will be a factor so that your next
-          questions will provide suggestions base on this.
+          We have filled in your ideal local locations for your campaign from
+          your recent inputs. You can still edit this base on your choices.
         </p>
         <form className="location__form">
           <label>
-            Business Category
-            <input placeholder="Eg. Fashion"></input>
+            Local Campaigns
+            <LocationSlider />
+            <LocationSlider />
+            <LocationSlider />
+            <LocationSlider />
+            <LocationSlider />
           </label>
         </form>
       </div>

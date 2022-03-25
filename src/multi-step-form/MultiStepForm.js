@@ -3,6 +3,7 @@ import BusinessCategory from './BusinessCategory';
 import AudienceType from './AudienceType';
 import Budget from './Budget';
 import Location from './Location';
+import InfluencerOverview from '../pages/InfluencerOverview';
 import StepZilla from 'react-stepzilla';
 
 export default function MultiStepForm() {
@@ -11,6 +12,7 @@ export default function MultiStepForm() {
     { name: 'Audience Type', component: <AudienceType /> },
     { name: 'Budget', component: <Budget /> },
     { name: 'Choose location', component: <Location /> },
+    { name: 'Final Step', component: <InfluencerOverview /> },
   ];
 
   return (

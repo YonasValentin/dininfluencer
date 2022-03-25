@@ -55,6 +55,7 @@ export default function InfluencerOverview() {
           navigation
           autoplay={true}
           loop={true}
+          spaceBetween={24}
           pagination={{ clickable: true, dynamicBullets: true }}
           onReachEnd={() => {
             /*...*/
