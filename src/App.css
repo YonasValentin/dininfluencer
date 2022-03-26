@@ -1476,6 +1476,49 @@ post-card__container img {
   background: #4b00ff !important;
 }
 
+.blog-section__container {
+  max-width: 1440px;
+  margin: 0 auto 40px;
+  padding: 0 20px 0 19px;
+}
+@media (min-width: 768px) {
+  .blog-section__container {
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-bottom: 64px;
+  }
+}
+@media (min-width: 1024px) {
+  .blog-section__container {
+    padding-right: 44px;
+    padding-left: 44px;
+  }
+}
+@media (min-width: 1280px) {
+  .blog-section__container {
+    padding-right: 128px;
+    padding-left: 128px;
+  }
+}
+@media (min-width: 1440px) {
+  .blog-section__container {
+    padding-right: 160px;
+    padding-left: 160px;
+  }
+}
+.blog-section__container h2 {
+  font-weight: bold;
+  color: #1d1443;
+  font-family: "Rubik", sans-serif;
+  font-size: 28px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .blog-section__container h2 {
+    font-size: 45px;
+  }
+}
+
 /* pages */
 .front-page__container {
   padding-top: 72px;

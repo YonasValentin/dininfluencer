@@ -37,14 +37,11 @@ export default function BlogSection() {
             '@1.00': {
               slidesPerView: 3,
             },
-            '@1.50': {
-              slidesPerView: 4,
-            },
           }}
           navigation
           autoplay={true}
           loop={true}
-          spaceBetween={24}
+          spaceBetween={30}
           pagination={{ clickable: true, dynamicBullets: true }}
           onReachEnd={() => {
             /*...*/
@@ -53,7 +50,7 @@ export default function BlogSection() {
           {posts.map((post) => {
             if (post.categories == 3) {
               return (
-                <SwiperSlide key={post.id} className="blog-section__post">
+                <SwiperSlide key={post.id}>
                   <BlogCard post={post} key={post.id} />
                 </SwiperSlide>
               );

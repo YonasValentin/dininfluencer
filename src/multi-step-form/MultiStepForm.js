@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 import BusinessCategory from './BusinessCategory';
 import AudienceType from './AudienceType';
 import Budget from './Budget';
@@ -12,7 +13,7 @@ export default function MultiStepForm() {
     { name: 'Audience Type', component: <AudienceType /> },
     { name: 'Budget', component: <Budget /> },
     { name: 'Choose location', component: <Location /> },
-    { name: 'Final Step', component: <InfluencerOverview /> },
+    { name: 'Finish', component: <InfluencerOverview /> },
   ];
 
   return (
@@ -28,6 +29,7 @@ export default function MultiStepForm() {
           steps={steps}
           showSteps={true}
           prevBtnOnLastStep={false}
+          nextTextOnFinalActionStep="Save"
         />
       </div>
     </main>
