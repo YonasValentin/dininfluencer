@@ -150,6 +150,11 @@
   @include media('>=tablet_portrait') {
     grid-column: 2;
   }
+
+  &__next-btn {
+    @include primary-button;
+  }
+
   &__container {
     padding-top: 32px;
 
@@ -169,12 +174,14 @@
   }
 
   &__form {
+    display: grid;
+    grid-row-gap: 32px;
     background: $white-color;
-    border-radius: 8px 8px 0 0;
-    padding: 32px 13px 0 14px;
+    border-radius: 8px;
+    padding: 32px 13px 32px 14px;
 
     @include media('>=tablet_portrait') {
-      padding: 56px 56px 0;
+      padding: 56px;
     }
 
     label {
@@ -227,12 +234,35 @@
   @include media('>=tablet_portrait') {
     grid-column: 2;
   }
+
+  &__next-btn {
+    @include primary-button;
+  }
+
+  &__prev-btn {
+    background: none;
+    color: $primary-color;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+
+    @include media('>=tablet_portrait') {
+      font-size: 16px;
+    }
+  }
+
   &__container {
     padding-top: 32px;
 
     @include media('>=tablet_portrait') {
       padding: 0;
     }
+  }
+
+  &__button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   h3 {
@@ -249,11 +279,11 @@
     display: grid;
     grid-row-gap: 32px;
     background: $white-color;
-    border-radius: 8px 8px 0 0;
-    padding: 32px 13px 0 14px;
+    border-radius: 8px;
+    padding: 32px 13px 32px 14px;
 
     @include media('>=tablet_portrait') {
-      padding: 56px 56px 0;
+      padding: 56px;
     }
 
     select {
@@ -294,6 +324,28 @@
     }
   }
 
+  &__next-btn {
+    @include primary-button;
+  }
+
+  &__prev-btn {
+    background: none;
+    color: $primary-color;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+
+    @include media('>=tablet_portrait') {
+      font-size: 16px;
+    }
+  }
+
+  &__button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   &__wrapper {
     display: grid !important;
     grid-template-columns: minmax(0, 2fr) minmax(0, 0.5fr) minmax(0, 2fr) !important;
@@ -323,11 +375,13 @@
 
   &__form {
     background: $white-color;
-    border-radius: 8px 8px 0 0;
-    padding: 32px 13px 0 14px;
+    border-radius: 8px;
+    padding: 32px 13px 32px 14px;
+    display: grid;
+    grid-row-gap: 24px;
 
     @include media('>=tablet_portrait') {
-      padding: 56px 56px 0;
+      padding: 56px;
     }
 
     select {
@@ -386,6 +440,28 @@
     }
   }
 
+  &__next-btn {
+    @include primary-button;
+  }
+
+  &__prev-btn {
+    background: none;
+    color: $primary-color;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+
+    @include media('>=tablet_portrait') {
+      font-size: 16px;
+    }
+  }
+
+  &__button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   &__wrapper {
     display: grid !important;
     grid-template-columns: minmax(0, 2fr) minmax(0, 0.5fr) minmax(0, 2fr) !important;
@@ -415,11 +491,11 @@
 
   &__form {
     background: $white-color;
-    border-radius: 8px 8px 0 0;
-    padding: 32px 13px 0 14px;
+    border-radius: 8px;
+    padding: 32px 13px 32px 14px;
 
     @include media('>=tablet_portrait') {
-      padding: 56px 56px 0;
+      padding: 56px;
     }
 
     select {

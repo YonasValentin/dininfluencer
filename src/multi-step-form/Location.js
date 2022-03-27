@@ -1,8 +1,9 @@
 import React from 'react';
 import 'rc-slider/assets/index.css';
 import LocationSlider from '../components/LocationSlider';
+import { Link } from 'react-router-dom';
 
-export default function Location() {
+export default function Location(props) {
   return (
     <main className="location">
       <div className="location__container">
@@ -20,6 +21,19 @@ export default function Location() {
             <LocationSlider />
             <LocationSlider />
           </label>
+
+          <div className="location__button-wrapper">
+            <a
+              className="location__prev-btn"
+              href="#"
+              onClick={() => props.jumpToStep(2)}
+            >
+              Previous
+            </a>
+            <Link className="location__next-btn" to="/influencer-overview">
+              Save
+            </Link>
+          </div>
         </form>
       </div>
     </main>

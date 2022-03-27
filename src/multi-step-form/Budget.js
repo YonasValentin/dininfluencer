@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Budget() {
+export default function Budget(props) {
   return (
     <main className="budget">
       <div className="budget__container">
@@ -18,6 +18,23 @@ export default function Budget() {
               <option>Month</option>
             </select>
           </label>
+
+          <div className="budget__button-wrapper">
+            <a
+              className="budget__prev-btn"
+              href="#"
+              onClick={() => props.jumpToStep(1)}
+            >
+              Previous
+            </a>
+            <a
+              className="budget__next-btn"
+              href="#"
+              onClick={() => props.jumpToStep(3)}
+            >
+              Next
+            </a>
+          </div>
         </form>
       </div>
     </main>

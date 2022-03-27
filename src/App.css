@@ -324,6 +324,22 @@ svg {
     grid-column: 2;
   }
 }
+.business-category__next-btn {
+  padding: 8px 24px;
+  cursor: pointer;
+  padding: 8px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  border: 0;
+  background: #4b00ff;
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  .business-category__next-btn {
+    font-size: 16px;
+  }
+}
 .business-category__container {
   padding-top: 32px;
 }
@@ -358,13 +374,15 @@ svg {
   }
 }
 .business-category__form {
+  display: grid;
+  grid-row-gap: 32px;
   background: #ffffff;
-  border-radius: 8px 8px 0 0;
-  padding: 32px 13px 0 14px;
+  border-radius: 8px;
+  padding: 32px 13px 32px 14px;
 }
 @media (min-width: 768px) {
   .business-category__form {
-    padding: 56px 56px 0;
+    padding: 56px;
   }
 }
 .business-category__form label {
@@ -426,6 +444,34 @@ svg {
     grid-column: 2;
   }
 }
+.audience-type__next-btn {
+  padding: 8px 24px;
+  cursor: pointer;
+  padding: 8px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  border: 0;
+  background: #4b00ff;
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  .audience-type__next-btn {
+    font-size: 16px;
+  }
+}
+.audience-type__prev-btn {
+  background: none;
+  color: #4b00ff;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .audience-type__prev-btn {
+    font-size: 16px;
+  }
+}
 .audience-type__container {
   padding-top: 32px;
 }
@@ -433,6 +479,11 @@ svg {
   .audience-type__container {
     padding: 0;
   }
+}
+.audience-type__button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .audience-type h3 {
   font-weight: bold;
@@ -463,12 +514,12 @@ svg {
   display: grid;
   grid-row-gap: 32px;
   background: #ffffff;
-  border-radius: 8px 8px 0 0;
-  padding: 32px 13px 0 14px;
+  border-radius: 8px;
+  padding: 32px 13px 32px 14px;
 }
 @media (min-width: 768px) {
   .audience-type__form {
-    padding: 56px 56px 0;
+    padding: 56px;
   }
 }
 .audience-type__form select {
@@ -511,6 +562,39 @@ svg {
     padding: 0;
   }
 }
+.budget__next-btn {
+  padding: 8px 24px;
+  cursor: pointer;
+  padding: 8px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  border: 0;
+  background: #4b00ff;
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  .budget__next-btn {
+    font-size: 16px;
+  }
+}
+.budget__prev-btn {
+  background: none;
+  color: #4b00ff;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .budget__prev-btn {
+    font-size: 16px;
+  }
+}
+.budget__button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .budget__wrapper {
   display: grid !important;
   grid-template-columns: minmax(0, 2fr) minmax(0, 0.5fr) minmax(0, 2fr) !important;
@@ -552,12 +636,14 @@ svg {
 }
 .budget__form {
   background: #ffffff;
-  border-radius: 8px 8px 0 0;
-  padding: 32px 13px 0 14px;
+  border-radius: 8px;
+  padding: 32px 13px 32px 14px;
+  display: grid;
+  grid-row-gap: 24px;
 }
 @media (min-width: 768px) {
   .budget__form {
-    padding: 56px 56px 0;
+    padding: 56px;
   }
 }
 .budget__form select {
@@ -620,6 +706,39 @@ svg {
     padding: 0;
   }
 }
+.location__next-btn {
+  padding: 8px 24px;
+  cursor: pointer;
+  padding: 8px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  border: 0;
+  background: #4b00ff;
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  .location__next-btn {
+    font-size: 16px;
+  }
+}
+.location__prev-btn {
+  background: none;
+  color: #4b00ff;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .location__prev-btn {
+    font-size: 16px;
+  }
+}
+.location__button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .location__wrapper {
   display: grid !important;
   grid-template-columns: minmax(0, 2fr) minmax(0, 0.5fr) minmax(0, 2fr) !important;
@@ -661,12 +780,12 @@ svg {
 }
 .location__form {
   background: #ffffff;
-  border-radius: 8px 8px 0 0;
-  padding: 32px 13px 0 14px;
+  border-radius: 8px;
+  padding: 32px 13px 32px 14px;
 }
 @media (min-width: 768px) {
   .location__form {
-    padding: 56px 56px 0;
+    padding: 56px;
   }
 }
 .location__form select {

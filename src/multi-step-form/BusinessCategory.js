@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function BusinessCategory() {
+export default function BusinessCategory(props) {
   return (
     <main className="business-category">
       <div className="business-category__container">
@@ -14,6 +14,16 @@ export default function BusinessCategory() {
             Business Category
             <input placeholder="Eg. Fashion"></input>
           </label>
+
+          <div className="business-category__button-wrapper">
+            <a
+              className="business-category__next-btn"
+              href="#"
+              onClick={() => props.jumpToStep(1)}
+            >
+              Next
+            </a>
+          </div>
         </form>
       </div>
     </main>

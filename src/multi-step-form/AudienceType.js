@@ -3,7 +3,7 @@ import React from 'react';
 import 'rc-slider/assets/index.css';
 import TooltipSlider from '../components/TooltipSlider.tsx';
 
-export default function AudienceType() {
+export default function AudienceType(props) {
   return (
     <main className="audience-type">
       <div className="audience-type__container">
@@ -75,6 +75,23 @@ export default function AudienceType() {
               <option></option>
             </select>
           </label>
+
+          <div className="audience-type__button-wrapper">
+            <a
+              className="audience-type__prev-btn"
+              href="#"
+              onClick={() => props.jumpToStep(0)}
+            >
+              Previous
+            </a>
+            <a
+              className="audience-type__next-btn"
+              href="#"
+              onClick={() => props.jumpToStep(2)}
+            >
+              Next
+            </a>
+          </div>
         </form>
       </div>
     </main>

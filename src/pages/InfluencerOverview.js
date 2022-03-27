@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import React from 'react';
 import { onSnapshot, query, orderBy, limit } from 'firebase/firestore';
 import { influencersRef } from '../firebase-config';
 import PostCard from '../components/PostCard';
