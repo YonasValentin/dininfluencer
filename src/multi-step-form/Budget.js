@@ -1,6 +1,19 @@
 import React from 'react';
 
 export default function Budget(props) {
+  const [budgetValue, setBudgetValue] = React.useState('');
+  const [budgetWordValue, setBudgetWord] = React.useState('');
+
+  const handleBudget = (e) => {
+    sessionStorage.setItem('budgetValue', e.target.value);
+    setBudgetValue(e.target.value);
+  };
+
+  const handleBudgetWord = (e) => {
+    sessionStorage.setItem('budgetWordValue', e.target.value);
+    setBudgetWord(e.target.value);
+  };
+
   return (
     <main className="budget">
       <div className="budget__container">
@@ -12,10 +25,17 @@ export default function Budget(props) {
         <form className="budget__form">
           <label className="budget__wrapper">
             Budget
-            <input className="budget__input" placeholder="Eg. $ 6.000"></input>
+            <input
+              onChange={handleBudget}
+              value={budgetValue}
+              className="budget__input"
+              placeholder="Eg. $ 6.000"
+            ></input>
             <p className="budget__word">per</p>
-            <select>
+            <select onChange={handleBudgetWord} value={budgetWordValue}>
               <option>Month</option>
+              <option>Week</option>
+              <option>Year</option>
             </select>
           </label>
 

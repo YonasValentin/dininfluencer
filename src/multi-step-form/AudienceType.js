@@ -4,6 +4,49 @@ import 'rc-slider/assets/index.css';
 import TooltipSlider from '../components/TooltipSlider.tsx';
 
 export default function AudienceType(props) {
+  const [genderValue, setGenderValue] = React.useState('');
+  //const [ageValue, setAgeValue] = React.useState('');
+  const [keywordsValue, setKeywordsValue] = React.useState('');
+  const [followersFromValue, setFollowersFromValue] = React.useState('');
+  const [followersToValue, setFollowersToValue] = React.useState('');
+  const [engagementFromValue, setEngagementFromValue] = React.useState('');
+  const [engagementToValue, setEngagementToValue] = React.useState('');
+
+  const handleGender = (e) => {
+    sessionStorage.setItem('genderValue', e.target.value);
+    setGenderValue(e.target.value);
+  };
+
+  /*const handleAge = (e) => {
+    sessionStorage.setItem('ageValue', e.target.value);
+    setAgeValue(e.target.value);
+  }; */
+
+  const handleKeywords = (e) => {
+    sessionStorage.setItem('keywordsValue', e.target.value);
+    setKeywordsValue(e.target.value);
+  };
+
+  const handleFollowersFrom = (e) => {
+    sessionStorage.setItem('followersFromValue', e.target.value);
+    setFollowersFromValue(e.target.value);
+  };
+
+  const handleFollowersTo = (e) => {
+    sessionStorage.setItem('followersToValue', e.target.value);
+    setFollowersToValue(e.target.value);
+  };
+
+  const handleEngagementFrom = (e) => {
+    sessionStorage.setItem('engagementFromValue', e.target.value);
+    setEngagementFromValue(e.target.value);
+  };
+
+  const handleEngagementTo = (e) => {
+    sessionStorage.setItem('engagementToValue', e.target.value);
+    setEngagementToValue(e.target.value);
+  };
+
   return (
     <main className="audience-type">
       <div className="audience-type__container">
@@ -16,7 +59,7 @@ export default function AudienceType(props) {
         <form className="audience-type__form">
           <label className="audience-type__gender">
             Gender
-            <select>
+            <select onChange={handleGender} value={genderValue}>
               <option value="" defaultValue>
                 Both
               </option>
@@ -41,38 +84,116 @@ export default function AudienceType(props) {
                 visible: true,
               }}
               pushable={true}
+              //onChange={handleAge}
+              //value={ageValue}
             />
           </label>
           <label className="keywords_wrapper">
             Keywords
-            <input placeholder="Eg. Fashion"></input>
+            <input
+              onChange={handleKeywords}
+              value={keywordsValue}
+              placeholder="Eg. Fashion"
+            ></input>
           </label>
 
           <label className="followers__wrapper">
             Followers
-            <select className="followers__from">
-              <option></option>
-              <option></option>
-              <option></option>
+            <select
+              onChange={handleFollowersFrom}
+              value={followersFromValue}
+              className="followers__from"
+            >
+              <option>300</option>
+              <option>500</option>
+              <option>700</option>
+              <option>1000</option>
+              <option>1200</option>
+              <option>1400</option>
+              <option>1600</option>
+              <option>1800</option>
+              <option>2000</option>
+              <option>2200</option>
+              <option>2400</option>
+              <option>2600</option>
+              <option>2800</option>
+              <option>3000</option>
+              <option>3200</option>
+              <option>3400</option>
+              <option>3600</option>
+              <option>3800</option>
+              <option>4000</option>
+              <option>4200</option>
+              <option>4400</option>
+              <option>4600</option>
+              <option>4800</option>
+              <option>5000</option>
+              <option>5200</option>
+              <option>5400</option>
+              <option>5600</option>
+              <option>5800</option>
             </select>
-            <select className="followers__to">
-              <option></option>
-              <option></option>
-              <option></option>
+            <select
+              onChange={handleFollowersTo}
+              value={followersToValue}
+              className="followers__to"
+            >
+              <option>300</option>
+              <option>500</option>
+              <option>700</option>
+              <option>1000</option>
+              <option>1200</option>
+              <option>1400</option>
+              <option>1600</option>
+              <option>1800</option>
+              <option>2000</option>
+              <option>2200</option>
+              <option>2400</option>
+              <option>2600</option>
+              <option>2800</option>
+              <option>3000</option>
+              <option>3200</option>
+              <option>3400</option>
+              <option>3600</option>
+              <option>3800</option>
+              <option>4000</option>
+              <option>4200</option>
+              <option>4400</option>
+              <option>4600</option>
+              <option>4800</option>
+              <option>5000</option>
+              <option>5200</option>
+              <option>5400</option>
+              <option>5600</option>
+              <option>5800</option>
             </select>
           </label>
 
           <label className="engagement__wrapper">
             Engagement
-            <select className="engagement__from">
-              <option></option>
-              <option></option>
-              <option></option>
+            <select
+              onChange={handleEngagementFrom}
+              value={engagementFromValue}
+              className="engagement__from"
+            >
+              <option>50%</option>
+              <option>60%</option>
+              <option>70%</option>
+              <option>80%</option>
+              <option>90%</option>
+              <option>100%</option>
             </select>
-            <select className="engagement__to">
-              <option></option>
-              <option></option>
-              <option></option>
+            <select
+              onChange={handleEngagementTo}
+              value={engagementToValue}
+              className="engagement__to"
+            >
+              <option>50%</option>
+              <option>60%</option>
+              <option>70%</option>
+              <option>80%</option>
+              <option>90%</option>
+              <option>100%</option>
             </select>
           </label>
 

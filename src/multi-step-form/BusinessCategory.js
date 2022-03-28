@@ -1,6 +1,12 @@
 import React from 'react';
 
 export default function BusinessCategory(props) {
+  const [businessCategoryValue, setBusinessCategoryValue] = React.useState('');
+
+  const handleBusinessCategory = (e) => {
+    sessionStorage.setItem('businessCategoryValue', e.target.value);
+    setBusinessCategoryValue(e.target.value);
+  };
   return (
     <main className="business-category">
       <div className="business-category__container">
@@ -12,7 +18,11 @@ export default function BusinessCategory(props) {
         <form className="business-category__form">
           <label>
             Business Category
-            <input placeholder="Eg. Fashion"></input>
+            <input
+              onChange={handleBusinessCategory}
+              value={businessCategoryValue}
+              placeholder="Eg. Fashion"
+            ></input>
           </label>
 
           <div className="business-category__button-wrapper">

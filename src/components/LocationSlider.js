@@ -3,9 +3,18 @@ import 'rc-slider/assets/index.css';
 import TooltipSlider from '../components/TooltipSlider.tsx';
 
 export default function LocationSlider() {
+  const [locationValue, setLocationValue] = React.useState('');
+
+  const handleLocationValue = (e) => {
+    sessionStorage.setItem('locationValue', e.target.value);
+    setLocationValue(e.target.value);
+  };
+
   return (
     <article className="location-slider">
       <input
+        onChange={handleLocationValue}
+        value={locationValue}
         className="location-slider__input"
         placeholder="Eg. London, UK"
       ></input>
