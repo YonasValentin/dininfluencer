@@ -6,6 +6,7 @@ import CampaignSection from '../sections/CampaignSection';
 import TailoredSection from '../sections/TailoredSection';
 import ReviewSection from '../sections/ReviewSection';
 import BlogSection from '../sections/BlogSection';
+import AboutSection from '../sections/AboutSection';
 
 export default function FrontPage() {
   return (
@@ -19,6 +20,7 @@ export default function FrontPage() {
         <TailoredSection />
         <ReviewSection />
         <BlogSection />
+        <AboutSection />
       </div>
     </main>
   );

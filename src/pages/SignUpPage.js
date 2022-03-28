@@ -32,20 +32,22 @@ export default function SignUpPage() {
   return (
     <main className="sign-up-page">
       <div className="sign-up-page__container">
-        <h1>Sign Up</h1>
-        <form onSubmit={handleSignUp}>
-          <input type="email" name="mail" placeholder="Type your mail" />
-          <input
-            type="password"
-            name="password"
-            placeholder="Type your password"
-          />
-          <p className="text-error">{errorMessage}</p>
-          <button>Sign Up</button>
-        </form>
-        <p className="text-center">
-          Already have an account? <Link to="/sign-in">Sign In</Link>
-        </p>
+        <article className="sign-up-page__form-wrapper">
+          <h1>Sign Up</h1>
+          <form onSubmit={handleSignUp}>
+            <input type="email" name="mail" placeholder="Type your mail" />
+            <input
+              type="password"
+              name="password"
+              placeholder="Type your password"
+            />
+            <p className="text-error">{errorMessage}</p>
+            <button>Sign Up</button>
+          </form>
+          <p className="text-center">
+            Already have an account? <Link to="/sign-in">Sign In</Link>
+          </p>
+        </article>
       </div>
     </main>
   );

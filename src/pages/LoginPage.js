@@ -28,12 +28,20 @@ export default function LoginPage() {
   return (
     <main className="login-page">
       <div className="login-page__container">
-        <h1>Sign in</h1>
-        <form onSubmit={login}>
-          <input type="email" name="email"></input>
-          <input type="password" name="password"></input>
-          <button>Login</button>
-        </form>
+        <article className="login-page__form-wrapper">
+          <h1>Login</h1>
+          <form onSubmit={login}>
+            <label>
+              E-mail
+              <input type="email" name="email"></input>
+            </label>
+            <label>
+              Password
+              <input type="password" name="password"></input>
+            </label>
+            <button>Login</button>
+          </form>
+        </article>
       </div>
     </main>
   );

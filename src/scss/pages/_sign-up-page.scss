@@ -1,8 +1,24 @@
 .sign-up-page {
   background: $light-blue-color;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &__container {
-    padding-top: 72px;
+    @include container;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__form-wrapper {
+    border-radius: 8px;
+    background: $white-color;
+    padding: 32px 13px 32px 14px;
+
+    @include media('>=tablet_portrait') {
+      padding: 56px;
+    }
   }
 }

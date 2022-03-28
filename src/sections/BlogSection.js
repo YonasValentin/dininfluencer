@@ -23,7 +23,7 @@ export default function BlogSection() {
   return (
     <main className="blog-section">
       <div className="blog-section__container">
-        <h2>Check out our latest blogposts</h2>
+        <h2>Check out our blog</h2>
         <Swiper
           modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
           //slidesPerView={1}
@@ -39,7 +39,7 @@ export default function BlogSection() {
             },
           }}
           navigation
-          autoplay={true}
+          autoplay={false}
           loop={true}
           spaceBetween={30}
           pagination={{ clickable: true, dynamicBullets: true }}

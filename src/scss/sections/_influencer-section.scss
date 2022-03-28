@@ -6,6 +6,15 @@
     padding-bottom: 48px;
   }
 
+  .swiper {
+    padding: 32px 0;
+
+    @include media('>=tablet_portrait') {
+      padding: 48px 0;
+      margin-bottom: 40px;
+    }
+  }
+
   h2 {
     @include h2;
     text-align: center;
