@@ -20,12 +20,14 @@ export default function InfluencerOverview() {
   }, []);
 
   return (
-    <section className="page">
-      <section className="grid-container">
-        {influencers.map((influencer) => (
-          <PostCard influencer={influencer} key={influencer.id} />
-        ))}
-      </section>
-    </section>
+    <main className="influencer-overview">
+      <div className="influencer-overview__container">
+        <article className="influencer-overview__influencer-cards">
+          {influencers.map((influencer) => (
+            <PostCard influencer={influencer} key={influencer.id} />
+          ))}
+        </article>
+      </div>
+    </main>
   );
 }

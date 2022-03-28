@@ -1,7 +1,7 @@
 @mixin button {
   cursor: pointer;
   padding: 8px 24px;
-  border-radius: 8px;
+  border-radius: 8px !important;
   font-weight: 600;
   font-size: 14px;
   border: 0;
@@ -29,4 +29,16 @@
   color: $white-color;
   background: transparent linear-gradient(103deg, #4b00ff 0%, #ff0080 100%) 0%
     0% no-repeat padding-box;
+}
+
+@mixin light-blue-button {
+  @include button;
+  color: $primary-color !important;
+  background: $purple-light-color !important;
+}
+
+@mixin light-pink-button {
+  @include button;
+  color: $secoundary-color !important;
+  background: $pink-light-color !important;
 }

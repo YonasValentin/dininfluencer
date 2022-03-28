@@ -120,7 +120,7 @@ svg {
   padding: 8px 24px;
   cursor: pointer;
   padding: 8px 24px;
-  border-radius: 8px;
+  border-radius: 8px !important;
   font-weight: 600;
   font-size: 14px;
   border: 0;
@@ -293,7 +293,7 @@ svg {
   padding: 8px 24px;
   cursor: pointer;
   padding: 8px 24px;
-  border-radius: 8px;
+  border-radius: 8px !important;
   font-weight: 600;
   font-size: 14px;
   border: 0;
@@ -328,7 +328,7 @@ svg {
   padding: 8px 24px;
   cursor: pointer;
   padding: 8px 24px;
-  border-radius: 8px;
+  border-radius: 8px !important;
   font-weight: 600;
   font-size: 14px;
   border: 0;
@@ -448,7 +448,7 @@ svg {
   padding: 8px 24px;
   cursor: pointer;
   padding: 8px 24px;
-  border-radius: 8px;
+  border-radius: 8px !important;
   font-weight: 600;
   font-size: 14px;
   border: 0;
@@ -566,7 +566,7 @@ svg {
   padding: 8px 24px;
   cursor: pointer;
   padding: 8px 24px;
-  border-radius: 8px;
+  border-radius: 8px !important;
   font-weight: 600;
   font-size: 14px;
   border: 0;
@@ -710,7 +710,7 @@ svg {
   padding: 8px 24px;
   cursor: pointer;
   padding: 8px 24px;
-  border-radius: 8px;
+  border-radius: 8px !important;
   font-weight: 600;
   font-size: 14px;
   border: 0;
@@ -847,12 +847,76 @@ post-card__container img {
   background: #ffffff;
   border: 1px solid #d8e0ff;
   border-radius: 20px;
+  padding: 16px;
 }
 .post-card__img-wrapper {
   height: 48px;
   width: 48px;
   border-radius: 50%;
   overflow: hidden;
+}
+.post-card__followers-count-label {
+  color: #6a6772;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+}
+@media (min-width: 768px) {
+  .post-card__followers-count-label {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+.post-card__followers-count {
+  font-weight: bold;
+  color: #1d1443;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #4b00ff;
+}
+@media (min-width: 768px) {
+  .post-card__followers-count {
+    font-size: 20px;
+  }
+}
+.post-card__btn-wrapper {
+  display: flex;
+  gap: 16px;
+}
+.post-card__favourite-btn {
+  cursor: pointer;
+  padding: 8px 24px;
+  border-radius: 8px !important;
+  font-weight: 600;
+  font-size: 14px;
+  border: 0;
+  color: #ff0080 !important;
+  background: #ffc9e4 !important;
+  margin-top: 0 !important;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .post-card__favourite-btn {
+    font-size: 16px;
+  }
+}
+.post-card__profile-btn {
+  cursor: pointer;
+  padding: 8px 24px;
+  border-radius: 8px !important;
+  font-weight: 600;
+  font-size: 14px;
+  border: 0;
+  color: #4b00ff !important;
+  background: #e3d8ff !important;
+  margin-top: 0 !important;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .post-card__profile-btn {
+    font-size: 16px;
+  }
 }
 
 .blog-card__container {
@@ -878,7 +942,7 @@ post-card__container img {
 .blog-card__content-wrapper button {
   cursor: pointer;
   padding: 8px 24px;
-  border-radius: 8px;
+  border-radius: 8px !important;
   font-weight: 600;
   font-size: 14px;
   border: 0;
@@ -1007,7 +1071,7 @@ post-card__container img {
 .hero-section__body-wrapper button {
   cursor: pointer;
   padding: 8px 24px;
-  border-radius: 8px;
+  border-radius: 8px !important;
   font-weight: 600;
   font-size: 14px;
   border: 0;
@@ -1089,7 +1153,7 @@ post-card__container img {
   padding: 8px 24px;
   cursor: pointer;
   padding: 8px 24px;
-  border-radius: 8px;
+  border-radius: 8px !important;
   font-weight: 600;
   font-size: 14px;
   border: 0;

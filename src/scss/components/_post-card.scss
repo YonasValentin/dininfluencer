@@ -3,6 +3,7 @@
     background: $white-color;
     border: 1px solid $darker-light-blue-color;
     border-radius: 20px;
+    padding: 16px;
   }
 
   &__img-wrapper {
@@ -10,5 +11,33 @@
     width: 48px;
     border-radius: 50%;
     overflow: hidden;
+  }
+
+  &__followers-count-label {
+    @include text-body;
+  }
+
+  &__followers-count {
+    @include h4;
+    font-weight: 500;
+    color: $primary-color;
+  }
+
+  &__btn-wrapper {
+    display: flex;
+    gap: 16px;
+    //align-items: flex-start;
+  }
+
+  &__favourite-btn {
+    @include light-pink-button;
+    margin-top: 0 !important;
+    flex: 1;
+  }
+
+  &__profile-btn {
+    @include light-blue-button;
+    margin-top: 0 !important;
+    flex: 1;
   }
 }
