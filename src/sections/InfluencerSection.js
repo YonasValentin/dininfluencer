@@ -15,7 +15,7 @@ export default function InfluencerOverview() {
   const [influencers, setInfluencers] = useState([]);
 
   useEffect(() => {
-    const q = query(influencersRef, limit(10)); // order by: lastest post first
+    const q = query(influencersRef, orderBy('followersCount'), limit(10)); // order by: lastest post first
     const unsubscribe = onSnapshot(q, (data) => {
       const influencerData = data.docs.map((doc) => {
         return { ...doc.data(), id: doc.id };

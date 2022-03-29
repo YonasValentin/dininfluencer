@@ -14,7 +14,19 @@ export default function InfluencerOverview() {
         return { ...doc.data(), id: doc.id };
       });
       console.log(influencerData);
-      setInfluencers(influencerData);
+
+      const filterFollowersFrom = sessionStorage.getItem('followersFromValue');
+      console.log(filterFollowersFrom);
+      const filterFollowersTo = sessionStorage.getItem('followersToValue');
+      console.log(filterFollowersTo);
+
+      const filteredData = influencerData.filter(
+        (influencer) =>
+          influencer.followersCount >= filterFollowersFrom &&
+          influencer.followersCount <= filterFollowersTo
+      );
+      console.log(filteredData);
+      setInfluencers(filteredData);
     });
     return () => unsubscribe();
   }, []);
