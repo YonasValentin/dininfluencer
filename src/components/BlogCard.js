@@ -10,7 +10,7 @@ export default function BlogCard({ post }) {
         <div className="blog-card__content-wrapper">
           <span>{post.date}</span>
           <h3>{post.title.rendered}</h3>
-          <p>{post.acf.featured_text}</p>
+          <p>{post.acf.featured_text.slice(0, 300)}</p>
           <button>Read more</button>
         </div>
       </div>

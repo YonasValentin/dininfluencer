@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { onSnapshot, where, query, orderBy, limit } from 'firebase/firestore';
+import { onSnapshot, query, orderBy, limit } from 'firebase/firestore';
 import { influencersRef } from '../firebase-config';
 import PostCard from '../components/PostCard';
 import { Autoplay, Navigation, Pagination, Scrollbar, A11y } from 'swiper';
@@ -17,8 +17,7 @@ export default function InfluencerOverview() {
   useEffect(() => {
     const q = query(
       influencersRef,
-      where('followersCount', '>', 5000),
-      orderBy('followersCount'),
+      orderBy('followersCount', 'desc'),
       limit(10)
     ); // order by: lastest post first
     const unsubscribe = onSnapshot(q, (data) => {

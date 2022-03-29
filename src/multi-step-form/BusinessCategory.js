@@ -4,7 +4,10 @@ export default function BusinessCategory(props) {
   const [businessCategoryValue, setBusinessCategoryValue] = React.useState('');
 
   const handleBusinessCategory = (e) => {
-    sessionStorage.setItem('businessCategoryValue', e.target.value);
+    sessionStorage.setItem(
+      'businessCategoryValue',
+      JSON.stringify(e.target.value).toLowerCase()
+    );
     setBusinessCategoryValue(e.target.value);
   };
   return (

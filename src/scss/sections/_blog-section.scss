@@ -4,9 +4,13 @@
     padding-top: 64px;
     padding-bottom: 64px;
 
+    .swiper-pointer-events {
+      padding-bottom: 24px !important;
+    }
+
     .swiper-pagination-bullets-dynamic {
-      //padding-top: 24px 8px !important;
       margin-top: 24px !important;
+      margin-bottom: 24px !important;
       overflow: visible !important;
     }
 

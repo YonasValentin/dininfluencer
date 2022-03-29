@@ -1,14 +1,11 @@
 .login-page {
   background: $light-blue-color;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   &__container {
     @include container;
-    display: flex;
-    flex-direction: column;
+    padding-top: calc(30vh + 72px);
+    margin-bottom: 0 !important;
   }
 
   &__form-wrapper {
@@ -30,6 +27,17 @@
     label {
       display: flex;
       flex-direction: column;
+      gap: 8px;
+
+      input {
+        border: 1px solid $grey-light-color;
+        border-radius: 8px;
+        padding: 12px 20px;
+
+        &::placeholder {
+          opacity: 20%;
+        }
+      }
     }
 
     button {

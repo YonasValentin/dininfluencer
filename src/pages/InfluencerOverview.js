@@ -15,6 +15,10 @@ export default function InfluencerOverview() {
       });
       console.log(influencerData);
 
+      const filterBusinessCategory = sessionStorage.getItem(
+        'businessCategoryValue'
+      );
+      console.log(filterBusinessCategory);
       const filterFollowersFrom = sessionStorage.getItem('followersFromValue');
       console.log(filterFollowersFrom);
       const filterFollowersTo = sessionStorage.getItem('followersToValue');
@@ -23,7 +27,8 @@ export default function InfluencerOverview() {
       const filteredData = influencerData.filter(
         (influencer) =>
           influencer.followersCount >= filterFollowersFrom &&
-          influencer.followersCount <= filterFollowersTo
+          influencer.followersCount <= filterFollowersTo &&
+          influencer.bio.includes('filterBusinessCategory')
       );
       console.log(filteredData);
       setInfluencers(filteredData);

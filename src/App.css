@@ -1700,8 +1700,12 @@ post-card__container img {
     padding-left: 160px;
   }
 }
+.blog-section__container .swiper-pointer-events {
+  padding-bottom: 24px !important;
+}
 .blog-section__container .swiper-pagination-bullets-dynamic {
   margin-top: 24px !important;
+  margin-bottom: 24px !important;
   overflow: visible !important;
 }
 @media (min-width: 768px) {
@@ -1834,17 +1838,13 @@ post-card__container img {
 .sign-up-page {
   background: #f1f4ff;
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .sign-up-page__container {
   max-width: 1440px;
   margin: 0 auto 40px;
   padding: 0 20px 0 19px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding-top: calc(30vh + 72px);
+  margin-bottom: 0 !important;
 }
 @media (min-width: 768px) {
   .sign-up-page__container {
@@ -1881,20 +1881,58 @@ post-card__container img {
     padding: 56px;
   }
 }
+.sign-up-page form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.sign-up-page form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.sign-up-page form label input {
+  border: 1px solid #bab5c5;
+  border-radius: 8px;
+  padding: 12px 20px;
+}
+.sign-up-page form label input::-moz-placeholder {
+  opacity: 20%;
+}
+.sign-up-page form label input:-ms-input-placeholder {
+  opacity: 20%;
+}
+.sign-up-page form label input::placeholder {
+  opacity: 20%;
+}
+.sign-up-page form button {
+  padding: 8px 24px;
+  cursor: pointer;
+  padding: 8px 24px;
+  border-radius: 8px !important;
+  font-weight: 600;
+  font-size: 14px;
+  border: 0;
+  background: #4b00ff;
+  color: #ffffff;
+  align-self: center;
+}
+@media (min-width: 768px) {
+  .sign-up-page form button {
+    font-size: 16px;
+  }
+}
 
 .login-page {
   background: #f1f4ff;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .login-page__container {
   max-width: 1440px;
   margin: 0 auto 40px;
   padding: 0 20px 0 19px;
-  display: flex;
-  flex-direction: column;
+  padding-top: calc(30vh + 72px);
+  margin-bottom: 0 !important;
 }
 @media (min-width: 768px) {
   .login-page__container {
@@ -1940,6 +1978,21 @@ post-card__container img {
 .login-page form label {
   display: flex;
   flex-direction: column;
+  gap: 8px;
+}
+.login-page form label input {
+  border: 1px solid #bab5c5;
+  border-radius: 8px;
+  padding: 12px 20px;
+}
+.login-page form label input::-moz-placeholder {
+  opacity: 20%;
+}
+.login-page form label input:-ms-input-placeholder {
+  opacity: 20%;
+}
+.login-page form label input::placeholder {
+  opacity: 20%;
 }
 .login-page form button {
   padding: 8px 24px;
