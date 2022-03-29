@@ -4,6 +4,12 @@
     padding-top: 64px;
     padding-bottom: 64px;
 
+    .swiper-pagination-bullets-dynamic {
+      //padding-top: 24px 8px !important;
+      margin-top: 24px !important;
+      overflow: visible !important;
+    }
+
     @include media('>=tablet_portrait') {
       padding-top: 112px;
       padding-bottom: 112px;

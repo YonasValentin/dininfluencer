@@ -38,12 +38,6 @@ svg {
      object-fit: cover;
 }
 
-/*.swiper-pagination-bullets-dynamic {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
 /* component */
 .nav {
   background: #ffffff;
@@ -1705,6 +1699,10 @@ post-card__container img {
     padding-right: 160px;
     padding-left: 160px;
   }
+}
+.blog-section__container .swiper-pagination-bullets-dynamic {
+  margin-top: 24px !important;
+  overflow: visible !important;
 }
 @media (min-width: 768px) {
   .blog-section__container {
