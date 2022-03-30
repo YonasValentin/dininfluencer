@@ -18,7 +18,9 @@ export default function PostCard({ influencer }) {
           <button className="post-card__favourite-btn">
             Add to favourites
           </button>
-          <button className="post-card__profile-btn">View profile</button>
+          <a className="post-card__profile-a-tag" href={influencer.profileUrl}>
+            <button className="post-card__profile-btn">View profile</button>
+          </a>
         </div>
       </div>
     </article>

@@ -1,0 +1,14 @@
+.influencer-overview {
+  &__container {
+    @include container;
+
+    padding-top: 72px;
+    margin-bottom: 0 !important;
+  }
+
+  &__influencer-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}

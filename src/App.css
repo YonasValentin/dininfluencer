@@ -901,6 +901,9 @@ post-card__container img {
     font-size: 16px;
   }
 }
+.post-card__profile-a-tag {
+  flex: 1;
+}
 .post-card__profile-btn {
   cursor: pointer;
   padding: 8px 24px;
@@ -911,7 +914,7 @@ post-card__container img {
   color: #4b00ff !important;
   background: #e3d8ff !important;
   margin-top: 0 !important;
-  flex: 1;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .post-card__profile-btn {
@@ -2010,4 +2013,42 @@ post-card__container img {
   .login-page form button {
     font-size: 16px;
   }
+}
+
+.influencer-overview__container {
+  max-width: 1440px;
+  margin: 0 auto 40px;
+  padding: 0 20px 0 19px;
+  padding-top: 72px;
+  margin-bottom: 0 !important;
+}
+@media (min-width: 768px) {
+  .influencer-overview__container {
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-bottom: 64px;
+  }
+}
+@media (min-width: 1024px) {
+  .influencer-overview__container {
+    padding-right: 44px;
+    padding-left: 44px;
+  }
+}
+@media (min-width: 1280px) {
+  .influencer-overview__container {
+    padding-right: 128px;
+    padding-left: 128px;
+  }
+}
+@media (min-width: 1440px) {
+  .influencer-overview__container {
+    padding-right: 160px;
+    padding-left: 160px;
+  }
+}
+.influencer-overview__influencer-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }/*# sourceMappingURL=App.css.map */

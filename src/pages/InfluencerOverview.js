@@ -28,7 +28,7 @@ export default function InfluencerOverview() {
         (influencer) =>
           influencer.followersCount >= filterFollowersFrom &&
           influencer.followersCount <= filterFollowersTo &&
-          influencer.bio.includes('filterBusinessCategory')
+          influencer.businessCategory.includes(filterBusinessCategory)
       );
       console.log(filteredData);
       setInfluencers(filteredData);

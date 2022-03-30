@@ -35,9 +35,13 @@
     flex: 1;
   }
 
+  &__profile-a-tag {
+    flex: 1;
+  }
+
   &__profile-btn {
     @include light-blue-button;
     margin-top: 0 !important;
-    flex: 1;
+    width: 100%;
   }
 }
