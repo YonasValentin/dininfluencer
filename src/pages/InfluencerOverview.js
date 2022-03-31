@@ -8,17 +8,16 @@ export default function InfluencerOverview() {
   const [influencers, setInfluencers] = useState([]);
 
   useEffect(() => {
-    const q = query(influencersRef, limit(10)); // order by: lastest post first
+    const q = query(influencersRef); // order by: lastest post first
     const unsubscribe = onSnapshot(q, (data) => {
       const influencerData = data.docs.map((doc) => {
         return { ...doc.data(), id: doc.id };
       });
-      console.log(influencerData);
 
-      const filterBusinessCategory = sessionStorage.getItem(
+       /*const filterBusinessCategory = window.sessionStorage.getItem(
         'businessCategoryValue'
-      ).toLocaleLowerCase();
-      console.log(filterBusinessCategory);
+      ); */
+
       const filterFollowersFrom = sessionStorage.getItem('followersFromValue');
       console.log(filterFollowersFrom);
       const filterFollowersTo = sessionStorage.getItem('followersToValue');
@@ -27,8 +26,7 @@ export default function InfluencerOverview() {
       const filteredData = influencerData.filter(
         (influencer) =>
           influencer.followersCount >= filterFollowersFrom &&
-          influencer.followersCount <= filterFollowersTo &&
-          influencer.bio.includes(filterBusinessCategory)
+          influencer.followersCount <= filterFollowersTo //&& influencer.bio.includes(filterBusinessCategory)
       );
       console.log(filteredData);
       setInfluencers(filteredData);

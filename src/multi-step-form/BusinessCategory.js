@@ -1,15 +1,15 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
+
 
 export default function BusinessCategory(props) {
-  const [businessCategoryValue, setBusinessCategoryValue] = React.useState('');
+  const [businessCategoryValue, setBusinessCategoryValue] = useState('');
 
-  const handleBusinessCategory = (e) => {
-    sessionStorage.setItem(
-      'businessCategoryValue',
-      JSON.stringify(e.target.value).toLowerCase()
-    );
-    setBusinessCategoryValue(e.target.value);
-  };
+  /*useEffect(() => {
+    window.sessionStorage.setItem('businessCategoryValue', JSON.stringify(businessCategoryValue));
+  })*/
+
+
   return (
     <main className="business-category">
       <div className="business-category__container">
@@ -22,8 +22,8 @@ export default function BusinessCategory(props) {
           <label>
             Business Category
             <input
-              onChange={handleBusinessCategory}
-              value={businessCategoryValue}
+              //onChange={(e) => setBusinessCategoryValue(e.target.value)}
+              //value={businessCategoryValue}
               placeholder="Eg. Fashion"
             ></input>
           </label>
