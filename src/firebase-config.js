@@ -16,7 +16,7 @@ const db = getFirestore(firebaseApp);
 
 export const influencersRef = collection(db, 'influencers'); // reference to influencers collection i firestore
 
-/* async function importData() {
+ /*async function importData() {
   const res = await fetch(
     'https://raw.githubusercontent.com/YonasValentin/dininfluencer/master/src/json/new-profiles.json'
   );

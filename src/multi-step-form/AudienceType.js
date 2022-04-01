@@ -4,48 +4,12 @@ import 'rc-slider/assets/index.css';
 import TooltipSlider from '../components/TooltipSlider.tsx';
 
 export default function AudienceType(props) {
-  const [genderValue, setGenderValue] = React.useState('');
-  //const [ageValue, setAgeValue] = React.useState('');
-  const [keywordsValue, setKeywordsValue] = React.useState('');
   const [followersFromValue, setFollowersFromValue] = React.useState('');
   const [followersToValue, setFollowersToValue] = React.useState('');
-  const [engagementFromValue, setEngagementFromValue] = React.useState('');
-  const [engagementToValue, setEngagementToValue] = React.useState('');
 
-  const handleGender = (e) => {
-    sessionStorage.setItem('genderValue', e.target.value);
-    setGenderValue(e.target.value);
-  };
+  sessionStorage.setItem('followersFromValue', (followersFromValue));
 
-  /*const handleAge = (e) => {
-    sessionStorage.setItem('ageValue', e.target.value);
-    setAgeValue(e.target.value);
-  }; */
-
-  const handleKeywords = (e) => {
-    sessionStorage.setItem('keywordsValue', e.target.value);
-    setKeywordsValue(e.target.value);
-  };
-
-  const handleFollowersFrom = (e) => {
-    sessionStorage.setItem('followersFromValue', e.target.value);
-    setFollowersFromValue(e.target.value);
-  };
-
-  const handleFollowersTo = (e) => {
-    sessionStorage.setItem('followersToValue', e.target.value);
-    setFollowersToValue(e.target.value);
-  };
-
-  const handleEngagementFrom = (e) => {
-    sessionStorage.setItem('engagementFromValue', e.target.value);
-    setEngagementFromValue(e.target.value);
-  };
-
-  const handleEngagementTo = (e) => {
-    sessionStorage.setItem('engagementToValue', e.target.value);
-    setEngagementToValue(e.target.value);
-  };
+  sessionStorage.setItem('followersToValue', (followersToValue));
 
   return (
     <main className="audience-type">
@@ -59,7 +23,7 @@ export default function AudienceType(props) {
         <form className="audience-type__form">
           <label className="audience-type__gender">
             Gender
-            <select onChange={handleGender} value={genderValue}>
+            <select>
               <option value="" defaultValue>
                 Both
               </option>
@@ -91,8 +55,6 @@ export default function AudienceType(props) {
           <label className="keywords_wrapper">
             Keywords
             <input
-              onChange={handleKeywords}
-              value={keywordsValue}
               placeholder="Eg. Fashion"
             ></input>
           </label>
@@ -100,11 +62,12 @@ export default function AudienceType(props) {
           <label className="followers__wrapper">
             Followers
             <select
-              onChange={handleFollowersFrom}
+              onChange={(e) => setFollowersFromValue(e.target.value)}
               value={followersFromValue}
               className="followers__from"
+              defaultValue={300}
             >
-              <option>300</option>
+              <option selected>300</option>
               <option>500</option>
               <option>700</option>
               <option>1000</option>
@@ -134,9 +97,10 @@ export default function AudienceType(props) {
               <option>5800</option>
             </select>
             <select
-              onChange={handleFollowersTo}
+              onChange={(e) => setFollowersToValue(e.target.value)}
               value={followersToValue}
               className="followers__to"
+              defaultValue={500}
             >
               <option>300</option>
               <option>500</option>
@@ -172,8 +136,6 @@ export default function AudienceType(props) {
           <label className="engagement__wrapper">
             Engagement
             <select
-              onChange={handleEngagementFrom}
-              value={engagementFromValue}
               className="engagement__from"
             >
               <option>50%</option>
@@ -184,8 +146,6 @@ export default function AudienceType(props) {
               <option>100%</option>
             </select>
             <select
-              onChange={handleEngagementTo}
-              value={engagementToValue}
               className="engagement__to"
             >
               <option>50%</option>

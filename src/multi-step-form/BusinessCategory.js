@@ -5,10 +5,7 @@ import { useState, useEffect } from 'react';
 export default function BusinessCategory(props) {
   const [businessCategoryValue, setBusinessCategoryValue] = useState('');
 
-  /*useEffect(() => {
-    window.sessionStorage.setItem('businessCategoryValue', JSON.stringify(businessCategoryValue));
-  })*/
-
+  sessionStorage.setItem('businessCategoryValue', JSON.stringify(businessCategoryValue));
 
   return (
     <main className="business-category">
@@ -22,8 +19,8 @@ export default function BusinessCategory(props) {
           <label>
             Business Category
             <input
-              //onChange={(e) => setBusinessCategoryValue(e.target.value)}
-              //value={businessCategoryValue}
+              onChange={(e) => setBusinessCategoryValue(e.target.value)}
+              value={businessCategoryValue}
               placeholder="Eg. Fashion"
             ></input>
           </label>
